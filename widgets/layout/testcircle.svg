@@ -1,0 +1,90 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:marker="http://knoxa.github.io/svg/marker" xmlns:widget="http://www.hursley.ibm.com/hsandt/widget" xmlns:data="http://www.hursley.ibm.com/grid/data" preserveAspectRatio="none" viewBox="0 0 2400 1800">
+
+
+  <script language="javascript" xlink:href="CircleLayout.js"/>
+  <script>
+  <![CDATA[
+  
+  window.onload = init;
+  
+  function init() {
+  
+    grid = new CircleLayout();
+    CircleLayout_layout(grid); // or grid.layout();
+
+    function click(evt) {
+    
+     alert('clicked');
+    }
+  }
+  ]]>
+  </script>
+
+<g id="layout" onclick="click(evt)" transform="translate(800,800)" style="font-size:40; text-anchor:middle">
+
+  <g>
+    <marker:layout/>
+    <text>one</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>two</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <circle r="40" style="fill:pink; stroke:black"/>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>three</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>four</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>five</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>six</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <rect x="-40" y="-40" width="80" height="80" style="fill:green; stroke:black"/>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>seven</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>eight</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>nine</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <circle r="40" style="fill:yellow; stroke:black"/>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>ten</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>eleven</text>
+  </g>
+  <g>
+    <marker:layout/>
+    <text>twelve</text>
+  </g>
+
+</g>
+ 
+</svg>
+
