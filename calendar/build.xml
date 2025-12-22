@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="SVG Calendar" default="yearplanner" basedir=".">
+
+  <target name="yearplanner">
+    <xslt in="input/1915.xml" out="../examples/yearplanner.svg" style="xsl/yearplanner.xsl" force="yes"/>
+  </target>
+
+  <target name="calendar">
+    <xslt in="input/1915.xml" out="../examples/calendar.svg" style="xsl/year.xsl" force="yes"/>
+  </target>
+
+</project>

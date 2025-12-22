@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="UTF-8"?><svg viewBox="0 0 400 300" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:data="data" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+    .background {fill:darkgrey; stroke:none}
+    .weekday {fill:white; stroke:none}
+    .weekend {fill:lightgrey; stroke:none}
+</style>
+<script>
+
+
+var okToDayZoom = false;
+
+function zoomMonth(node, viewbox) {
+
+   //alert(viewbox);
+   var current = node.getAttribute("viewBox");
+   if (current == viewbox) {
+      node.setAttribute("viewBox", '0 0 400 300');
+      okToDayZoom = false;
+   }
+   else {
+      node.setAttribute("viewBox", viewbox);
+      okToDayZoom = true;
+   }
+ }
+
+function zoomDay(evt, viewbox) {
+
+  if (okToDayZoom) {
+  
+     var node = evt.target;
+  
+     while ( node.nodeName != 'svg' &amp;&amp; node != document.documentElement ) {
+	   node = node.parentNode;
+     }
+
+      var current = node.getAttribute("viewBox");
+      if (current == viewbox)  node.setAttribute("viewBox", '0 0 71 78');
+      else                     node.setAttribute("viewBox", viewbox);
+  }
+  
+  evt.stopPropagation(); evt.preventDefault();
+}
+
+
+</script>
+<svg x="0" y="0" width="100" height="100" onclick="zoomMonth(document.documentElement, '0 0 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">January</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150101" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150102" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150103" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150104" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150105" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150106" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150107" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150108" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150109" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150110" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150111" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150112" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150113" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150114" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150115" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150116" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150117" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150118" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150119" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150120" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150121" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150122" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150123" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150124" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150125" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150126" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150127" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150128" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150129" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150130" transform="translate(61,41)" onclick="zoomDay(evt, '61 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19150131" transform="translate(1,51)" onclick="zoomDay(evt, '1 68 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="100" y="0" width="100" height="100" onclick="zoomMonth(document.documentElement, '100 0 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">February</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150201" transform="translate(11,1)" onclick="zoomDay(evt, '11 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150202" transform="translate(21,1)" onclick="zoomDay(evt, '21 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150203" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150204" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150205" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150206" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150207" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150208" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150209" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150210" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150211" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150212" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150213" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150214" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150215" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150216" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150217" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150218" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150219" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150220" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150221" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150222" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150223" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150224" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150225" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150226" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150227" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150228" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="200" y="0" width="100" height="100" onclick="zoomMonth(document.documentElement, '200 0 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">March</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150301" transform="translate(11,1)" onclick="zoomDay(evt, '11 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150302" transform="translate(21,1)" onclick="zoomDay(evt, '21 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150303" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150304" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150305" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150306" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150307" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150308" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150309" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150310" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150311" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150312" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150313" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150314" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150315" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150316" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150317" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150318" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150319" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150320" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150321" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150322" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150323" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150324" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150325" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150326" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150327" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150328" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150329" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150330" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19150331" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="300" y="0" width="100" height="100" onclick="zoomMonth(document.documentElement, '300 0 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">April</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150401" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150402" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150403" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150404" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150405" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150406" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150407" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150408" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150409" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150410" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150411" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150412" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150413" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150414" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150415" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150416" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150417" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150418" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150419" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150420" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150421" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150422" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150423" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150424" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150425" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150426" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150427" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150428" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150429" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150430" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="0" y="100" width="100" height="100" onclick="zoomMonth(document.documentElement, '0 100 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">May</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150501" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150502" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150503" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150504" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150505" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150506" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150507" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150508" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150509" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150510" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150511" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150512" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150513" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150514" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150515" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150516" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150517" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150518" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150519" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150520" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150521" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150522" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150523" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150524" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150525" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150526" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150527" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150528" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150529" transform="translate(61,41)" onclick="zoomDay(evt, '61 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150530" transform="translate(1,51)" onclick="zoomDay(evt, '1 68 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19150531" transform="translate(11,51)" onclick="zoomDay(evt, '11 68 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="100" y="100" width="100" height="100" onclick="zoomMonth(document.documentElement, '100 100 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">June</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150601" transform="translate(21,1)" onclick="zoomDay(evt, '21 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150602" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150603" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150604" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150605" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150606" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150607" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150608" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150609" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150610" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150611" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150612" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150613" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150614" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150615" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150616" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150617" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150618" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150619" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150620" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150621" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150622" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150623" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150624" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150625" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150626" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150627" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150628" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150629" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150630" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="200" y="100" width="100" height="100" onclick="zoomMonth(document.documentElement, '200 100 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">July</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150701" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150702" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150703" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150704" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150705" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150706" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150707" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150708" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150709" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150710" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150711" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150712" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150713" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150714" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150715" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150716" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150717" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150718" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150719" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150720" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150721" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150722" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150723" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150724" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150725" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150726" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150727" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150728" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150729" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150730" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19150731" transform="translate(61,41)" onclick="zoomDay(evt, '61 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="300" y="100" width="100" height="100" onclick="zoomMonth(document.documentElement, '300 100 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">August</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150801" transform="translate(1,1)" onclick="zoomDay(evt, '1 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150802" transform="translate(11,1)" onclick="zoomDay(evt, '11 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150803" transform="translate(21,1)" onclick="zoomDay(evt, '21 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150804" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150805" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150806" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150807" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150808" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150809" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150810" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150811" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150812" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150813" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150814" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150815" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150816" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150817" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150818" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150819" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150820" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150821" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150822" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150823" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150824" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150825" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150826" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150827" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150828" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150829" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150830" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19150831" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="0" y="200" width="100" height="100" onclick="zoomMonth(document.documentElement, '0 200 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">September</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19150901" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19150902" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19150903" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19150904" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19150905" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19150906" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19150907" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19150908" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19150909" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19150910" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19150911" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19150912" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19150913" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19150914" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19150915" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19150916" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19150917" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19150918" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19150919" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19150920" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19150921" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19150922" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19150923" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19150924" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19150925" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19150926" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19150927" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19150928" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19150929" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19150930" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="100" y="200" width="100" height="100" onclick="zoomMonth(document.documentElement, '100 200 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">October</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19151001" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19151002" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19151003" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19151004" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19151005" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19151006" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19151007" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19151008" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19151009" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19151010" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19151011" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19151012" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19151013" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19151014" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19151015" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19151016" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19151017" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19151018" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19151019" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19151020" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19151021" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19151022" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19151023" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19151024" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19151025" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19151026" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19151027" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19151028" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19151029" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19151030" transform="translate(61,41)" onclick="zoomDay(evt, '61 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19151031" transform="translate(1,51)" onclick="zoomDay(evt, '1 68 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="200" y="200" width="100" height="100" onclick="zoomMonth(document.documentElement, '200 200 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">November</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19151101" transform="translate(11,1)" onclick="zoomDay(evt, '11 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19151102" transform="translate(21,1)" onclick="zoomDay(evt, '21 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19151103" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19151104" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19151105" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19151106" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19151107" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19151108" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19151109" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19151110" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19151111" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19151112" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19151113" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19151114" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19151115" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19151116" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19151117" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19151118" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19151119" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19151120" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19151121" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19151122" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19151123" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19151124" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19151125" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19151126" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19151127" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19151128" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19151129" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19151130" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+<svg x="300" y="200" width="100" height="100" onclick="zoomMonth(document.documentElement, '300 200 100 100')">
+<svg viewBox="0 0 71 78" preserveAspectRatio="none" xmlns:svg="http://www.w3.org/2000/svg">
+<rect width="71" height="11" style="fill:grey"/>
+<g class="weekend" transform="translate(1,1)">
+<rect width="69" height="9"/>
+<text x="34.5" y="7" style="font-size:7px; fill:black; text-anchor:middle">December</text>
+</g>
+<g transform="translate(0,11)">
+<rect width="71" height="6" style="fill:grey; stroke:none"/>
+<g class="weekday">
+<g transform="translate(1,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sun</text>
+</g>
+<g transform="translate(11,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Mon</text>
+</g>
+<g transform="translate(21,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Tue</text>
+</g>
+<g transform="translate(31,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Wed</text>
+</g>
+<g transform="translate(41,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Thu</text>
+</g>
+<g transform="translate(51,1)">
+<rect width="9" height="4.5"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Fri</text>
+</g>
+<g transform="translate(61,1)">
+<rect width="9" height="4.5" class="weekend"/>
+<text x="4.5" y="3" style="font-size:3px; fill:black; text-anchor:middle">Sat</text>
+</g>
+</g>
+<g transform="translate(0,6)">
+<rect width="71" height="61" style="fill:grey"/>
+<g class="weekend">
+<svg:g id="19151201" transform="translate(31,1)" onclick="zoomDay(evt, '31 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">1</svg:text>
+</svg:g>
+<svg:g id="19151202" transform="translate(41,1)" onclick="zoomDay(evt, '41 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">2</svg:text>
+</svg:g>
+<svg:g id="19151203" transform="translate(51,1)" onclick="zoomDay(evt, '51 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">3</svg:text>
+</svg:g>
+<svg:g id="19151204" transform="translate(61,1)" onclick="zoomDay(evt, '61 18 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">4</svg:text>
+</svg:g>
+<svg:g id="19151205" transform="translate(1,11)" onclick="zoomDay(evt, '1 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">5</svg:text>
+</svg:g>
+<svg:g id="19151206" transform="translate(11,11)" onclick="zoomDay(evt, '11 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">6</svg:text>
+</svg:g>
+<svg:g id="19151207" transform="translate(21,11)" onclick="zoomDay(evt, '21 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">7</svg:text>
+</svg:g>
+<svg:g id="19151208" transform="translate(31,11)" onclick="zoomDay(evt, '31 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">8</svg:text>
+</svg:g>
+<svg:g id="19151209" transform="translate(41,11)" onclick="zoomDay(evt, '41 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">9</svg:text>
+</svg:g>
+<svg:g id="19151210" transform="translate(51,11)" onclick="zoomDay(evt, '51 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">10</svg:text>
+</svg:g>
+<svg:g id="19151211" transform="translate(61,11)" onclick="zoomDay(evt, '61 28 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">11</svg:text>
+</svg:g>
+<svg:g id="19151212" transform="translate(1,21)" onclick="zoomDay(evt, '1 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">12</svg:text>
+</svg:g>
+<svg:g id="19151213" transform="translate(11,21)" onclick="zoomDay(evt, '11 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">13</svg:text>
+</svg:g>
+<svg:g id="19151214" transform="translate(21,21)" onclick="zoomDay(evt, '21 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">14</svg:text>
+</svg:g>
+<svg:g id="19151215" transform="translate(31,21)" onclick="zoomDay(evt, '31 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">15</svg:text>
+</svg:g>
+<svg:g id="19151216" transform="translate(41,21)" onclick="zoomDay(evt, '41 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">16</svg:text>
+</svg:g>
+<svg:g id="19151217" transform="translate(51,21)" onclick="zoomDay(evt, '51 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">17</svg:text>
+</svg:g>
+<svg:g id="19151218" transform="translate(61,21)" onclick="zoomDay(evt, '61 38 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">18</svg:text>
+</svg:g>
+<svg:g id="19151219" transform="translate(1,31)" onclick="zoomDay(evt, '1 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">19</svg:text>
+</svg:g>
+<svg:g id="19151220" transform="translate(11,31)" onclick="zoomDay(evt, '11 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">20</svg:text>
+</svg:g>
+<svg:g id="19151221" transform="translate(21,31)" onclick="zoomDay(evt, '21 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">21</svg:text>
+</svg:g>
+<svg:g id="19151222" transform="translate(31,31)" onclick="zoomDay(evt, '31 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">22</svg:text>
+</svg:g>
+<svg:g id="19151223" transform="translate(41,31)" onclick="zoomDay(evt, '41 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">23</svg:text>
+</svg:g>
+<svg:g id="19151224" transform="translate(51,31)" onclick="zoomDay(evt, '51 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">24</svg:text>
+</svg:g>
+<svg:g id="19151225" transform="translate(61,31)" onclick="zoomDay(evt, '61 48 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">25</svg:text>
+</svg:g>
+<svg:g id="19151226" transform="translate(1,41)" onclick="zoomDay(evt, '1 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekend"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">26</svg:text>
+</svg:g>
+<svg:g id="19151227" transform="translate(11,41)" onclick="zoomDay(evt, '11 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">27</svg:text>
+</svg:g>
+<svg:g id="19151228" transform="translate(21,41)" onclick="zoomDay(evt, '21 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">28</svg:text>
+</svg:g>
+<svg:g id="19151229" transform="translate(31,41)" onclick="zoomDay(evt, '31 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">29</svg:text>
+</svg:g>
+<svg:g id="19151230" transform="translate(41,41)" onclick="zoomDay(evt, '41 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">30</svg:text>
+</svg:g>
+<svg:g id="19151231" transform="translate(51,41)" onclick="zoomDay(evt, '51 58 9 9')" xmlns="">
+<svg:rect width="9" height="9" class="weekday"/>
+<svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end">31</svg:text>
+</svg:g>
+</g>
+</g>
+</g>
+</svg>
+<rect x="0" y="0" width="100" height="100" style="stroke:white; fill:none"/>
+</svg>
+</svg>
