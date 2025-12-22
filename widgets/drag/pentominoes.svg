@@ -3,7 +3,7 @@
 viewBox="0 0 600 600" width="600" height="600" preserveAspectRatio="none" content-type="utf-8">
 
 <script language="javascript" xlink:href="drag.js" />
-<script language="javascript" xlink:href="../Canvas/Canvas.js" />
+<script language="javascript" xlink:href="../canvas/canvas.js" />
 
 <defs>
   
