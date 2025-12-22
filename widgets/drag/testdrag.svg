@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:marker="http://knoxa.github.io/svg/marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<script language="javascript" xlink:href="drag.js" />
+<script language="javascript" xlink:href="../canvas/canvas.js" />
+
+<defs>
+  <rect id="icon" width="10" height="10" style="fill:green"/>
+</defs>
+
+<g id="world" style="fill:white; stroke:black; pointer-events:visible">
+
+  <marker:drag.background/>
+  <rect x="0" y="0" width="600" height="600" style="fill:white; stroke:red" />
+  <rect x="300" y="300" width="50" height="50" style="fill:yellow; stroke:none"/>
+
+<g transform="translate(347,95)">
+  <marker:drag.draggable/>
+  <circle r="10"/>
+</g>
+
+<g>
+<g id="pink" transform="translate(127,195)">
+  <circle r="10" style="fill:pink" />
+</g>
+</g>
+
+<g id="green" transform="translate(207,217)">
+  <marker:drag.draggable/>
+  <circle r="10" style="fill:green"/>
+</g>
+
+<g id="dropTargets">
+  <rect id="zz" x="300" y="300" width="50" height="50" style="fill:none; stroke:green; pointer-events:none"/>
+</g>
+
+</g>
+
+<script language="javascript">
+<![CDATA[
+
+  canvas = new Canvas();
+  drag   = new Drag();
+
+  function mydrop(evt, target) {
+    console.log("target", target);
+  }
+  
+  drag.dropCallback = mydrop;
+]]>
+</script>
+
+</svg>
