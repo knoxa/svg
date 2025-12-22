@@ -1,2 +1,2 @@
-# SVG
+# Scalable Vector Graphics
 
