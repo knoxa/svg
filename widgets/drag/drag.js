@@ -1,4 +1,3 @@
- var drag = new Drag();
 
 function _Drag_down (evt) {
 
@@ -6,11 +5,11 @@ function _Drag_down (evt) {
   if (!drag.target)  drag.target = evt.target.parentNode;
   
   var xy = getPosition(drag.target);
-  
+
   //alert("("+xy.x + "," + xy.y + ")");
   //alert("("+drag.target.getCTM().e+ "," + drag.target.getCTM().f + ")");
   
-  var p = getCoordinates(evt);
+  var p = _Canvas_viewbox.getCoordinates(evt);
   //drag.offset.x = drag.target.getCTM().e - p.x;
   //drag.offset.y = drag.target.getCTM().f - p.y;
   drag.offset.x = xy.x - p.x;
@@ -26,14 +25,18 @@ function _Drag_down (evt) {
 function _Drag_move (evt) {
 
   if (drag.dragging) { 
-    var p = getCoordinates(evt);
-    var newX = p.x + drag.offset.x;
-    var newY = p.y + drag.offset.y;
+    var p = _Canvas_viewbox.getCoordinates(evt);
+
+    //var newX = p.x + drag.offset.x;
+    //var newY = p.y + drag.offset.y;
+    var newX = p.x;
+    var newY = p.y;
     
+    var newp =  new Point(newX, newY);
+
 	var transform = getSvgTransform(drag.target);
 	transform.xTranslate = newX; transform.yTranslate = newY;
 	drag.target.setAttribute('transform', transform.getSvgTransformString());
-
     drag.moveCallback(drag.target, newX, newY);
   }
 }
@@ -106,5 +109,6 @@ return this;
 function getPosition(node) {
 
   var transform = node.getCTM();
-  return new Point(transform.e * _Canvas_viewbox.stretchX, transform.f * _Canvas_viewbox.stretchY);
+  //return new Point(transform.e * _Canvas_viewbox.viewbox.stretchX, transform.f * _Canvas_viewbox.viewbox.stretchY);
+  return new Point(transform.e, transform.f);
 }
