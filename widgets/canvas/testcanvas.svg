@@ -1,7 +1,7 @@
 <?xml version = "1.0" standalone = "yes"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="900" preserveAspectRatio="xMidYMid" viewBox="0 0 1200 900" onload="init(evt)">
 
-<script language="text/ecmascript" xlink:href="/D:/GitHub/svg/widgets/canvas/canvas.js"/>
+<script language="text/ecmascript" xlink:href="canvas.js"/>
 
 <script>
 <![CDATA[
@@ -30,7 +30,7 @@ function click(evt) {
 		<text x="510" y="510">500,500</text>
 	</g>
 
-	<g id="fred" transform="translate(800,800)">
+	<g id="fred" transform="translate(300,300)">
 		<circle r="20" style="fill:yellow; stroke:red"/>
 	</g>
 
