@@ -3,19 +3,22 @@
 <body>
 <div>
 <?xml version = "1.0" standalone = "yes"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="900" viewBox="0 0 1200 900" onload="init(evt)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="450" viewBox="0 0 1200 900" onload="init(evt)">
 
 <script language="text/ecmascript" xlink:href="/D:/GitHub/svg/widgets/canvas/canvas.js"/>
 
 <script>
 <![CDATA[
 
-  document.documentElement.style.transform = "scale(1)";
-  document.documentElement.style.transformOrigin = "0 0";
+function init(evt) {
+
+  canvas = new Canvas(evt);
+}
 
 function click(evt) {
 
-  xy = getCoordinates(evt);
+  xy = canvas.getCoordinates(evt);
+  console.log('1: ');
   console.log(xy);
   moveElementTo(document.getElementById("fred"), xy);
 }
@@ -38,6 +41,52 @@ function click(evt) {
 	</g>
 
 	<g id="fred" transform="translate(800,800)">
+		<circle r="20" style="fill:yellow; stroke:red"/>
+	</g>
+
+</svg>
+</div>
+<p>testing...</p>
+<div>
+<?xml version = "1.0" standalone = "yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="450" viewBox="0 0 1200 900" onload="init2(evt)">
+
+<script language="text/ecmascript" xlink:href="/D:/GitHub/svg/widgets/canvas/canvas.js"/>
+
+<script>
+<![CDATA[
+
+function init2(evt) {
+
+  canvas2 = new Canvas(evt);
+}
+
+function click2(evt) {
+
+  xy = canvas2.getCoordinates(evt);
+  console.log('2: ');
+  console.log(xy);
+  moveElementTo(document.getElementById("fred2"), xy);
+}
+
+]]>
+</script>
+
+	<g onclick="click2(evt)">
+		<rect width="1200" height="900" style="fill:pink; stroke:none"/>
+	</g>
+
+	<g>
+		<circle cx="100" cy="100" r="1" style="fill:none; stroke:black; pointer-events:none"/>
+		<text x="110" y="110">100,100</text>
+	</g>
+
+	<g>
+		<circle cx="500" cy="500" r="1" style="fill:none; stroke:black; pointer-events:none"/>
+		<text x="510" y="510">500,500</text>
+	</g>
+
+	<g id="fred2" transform="translate(800,800)">
 		<circle r="20" style="fill:yellow; stroke:red"/>
 	</g>
 

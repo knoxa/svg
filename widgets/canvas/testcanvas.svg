@@ -6,9 +6,14 @@
 <script>
 <![CDATA[
 
+function init(evt) {
+
+  canvas = new Canvas(evt);
+}
+
 function click(evt) {
 
-  xy = getCoordinates(evt);
+  xy = canvas.getCoordinates(evt);
   console.log(xy);
   moveElementTo(document.getElementById("fred"), xy);
 }

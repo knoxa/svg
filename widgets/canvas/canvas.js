@@ -1,45 +1,27 @@
 
-//_Canvas_viewbox = new ViewBox(document);
+function Canvas(evt) {
 
+  this.viewbox = new ViewBox(evt.target);
 
-function init(evt) {
-
-_Canvas_viewbox = new ViewBox(evt.target);
-}
-
-
-window.addEventListener("resize", function(event) {
-	_Canvas_viewbox.resize();
-});
-
-function Canvas() {
-
-  this.icon    = document.getElementById("icon");
-  this.resize     = new Function ( "_Canvas_viewbox.resize()" );
-  this.getViewBox = new Function ( "return _Canvas_viewbox" );
-  this.click      = new Function ( "evt", "placeIconAt(this.icon, getCoordinates(evt))" );
-}
-
-
-function placeIconAt(icon, point) {
-
-  var node = icon.cloneNode(true);
-  var t = 'translate(' + point.x +',' + point.y + ')';
-  node.setAttribute('transform', t);
+  this.getViewBox = new Function ( "return this.viewbox" );
   
-  // add it to the picture
-  document.documentElement.appendChild(node);
+  this.getCoordinates = function(evt) {	  
+	return getCoordinates(evt, this.viewbox);
+  };
   
-  return node;
+  this.resize = function(viewbox) {
+    viewbox.resize();
+  };
+
+  window.addEventListener("resize", this.resize(this.viewbox));
 }
 
 
-function getCoordinates(evt) {
+function getCoordinates(evt, viewbox) {
 
   var doc = evt.target.ownerDocument.documentElement;
-  var viewbox = _Canvas_viewbox;
 
-  var bounds = evt.target.getBoundingClientRect();
+  var bounds = viewbox.svg.getBoundingClientRect();
   var left = evt.target.ownerDocument.scrollingElement.scrollLeft + bounds.left;
   var top  = evt.target.ownerDocument.scrollingElement.scrollTop  - bounds.top;
 
@@ -47,7 +29,6 @@ function getCoordinates(evt) {
   var y = evt.offsetY / bounds.height * viewbox.height;
 
   return new Point(Math.round(x*1000)/1000, Math.round(y*1000)/1000);
-
 }
 
 
@@ -59,6 +40,8 @@ function ViewBox(svgdoc) {
 	  
 	  console.log('preserveAspectRatio: none');
   }
+  
+  this.svg = svgdoc;
   
   var v = svgdoc.getAttribute('viewBox');
   var list = v.split(' ');
@@ -99,6 +82,7 @@ function _getZoom(svgdoc) {
 	  else return 1.0;
 }
 
+
 function moveElementTo(node, point) {
 
 	var transform = getSvgTransform(node);
@@ -115,31 +99,7 @@ function moveElementTo(node, point) {
 	}
 }
 
-
-//////////////////////
-
-function Point(x,y) {
-	
-  this.x = x;
-  this.y = y;
-  return this;
-}
-
-
-////////////
-
-function Transform() {
-
-	this.xTranslate = 0; this.yTranslate = 0;
-	this.xScale = 1; this.yScale = 1;
-	this.xSkew = 0; this.ySkew = 0;
-	this.rotate = 0;
-	
-	this.getSvgTransformString = new Function ( "return _getSvgTransformString(this)" );
-	
-	return this;
-}
-
+//////
 
 function getSvgTransform(target) {
 
@@ -177,6 +137,19 @@ function getSvgTransform(target) {
 }
 
 
+function Transform() {
+
+	this.xTranslate = 0; this.yTranslate = 0;
+	this.xScale = 1; this.yScale = 1;
+	this.xSkew = 0; this.ySkew = 0;
+	this.rotate = 0;
+	
+	this.getSvgTransformString = new Function ( "return _getSvgTransformString(this)" );
+	
+	return this;
+}
+
+
 function _getSvgTransformString(transform) {
 	
 	// construct a string for the SVG transform attribute.
@@ -196,9 +169,11 @@ function _getSvgTransformString(transform) {
 	return result;
 }
 
+//////////////////////
 
-function getSvgOffset() {
+function Point(x,y) {
 	
-	offset = new Point(0.0, 0.0);
-	return offset;
+  this.x = x;
+  this.y = y;
+  return this;
 }
