@@ -15,6 +15,7 @@ function click(evt) {
 
   xy = canvas.getCoordinates(evt);
   console.log(xy);
+  fff = canvas.viewbox.svg;
   moveElementTo(document.getElementById("fred"), xy);
 }
 
@@ -35,8 +36,9 @@ function click(evt) {
 		<text x="510" y="510">500,500</text>
 	</g>
 
-	<g id="fred" transform="translate(300,300)">
+	<g id="fred" transform="translate(300,300) rotate(45)">
 		<circle r="20" style="fill:yellow; stroke:red"/>
+		<path d="m0,0 v-40" style="stroke:black"/>
 	</g>
 
 </svg>

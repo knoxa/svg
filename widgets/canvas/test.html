@@ -5,7 +5,7 @@
 <?xml version = "1.0" standalone = "yes"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="450" viewBox="0 0 1200 900" onload="init(evt)">
 
-<script language="text/ecmascript" xlink:href="/D:/GitHub/svg/widgets/canvas/canvas.js"/>
+<script language="text/ecmascript" xlink:href="canvas.js"/>
 
 <script>
 <![CDATA[
@@ -13,6 +13,8 @@
 function init(evt) {
 
   canvas = new Canvas(evt);
+  
+  ggg = document.getElementById("fred");
 }
 
 function click(evt) {
@@ -40,18 +42,19 @@ function click(evt) {
 		<text x="510" y="510">500,500</text>
 	</g>
 
-	<g id="fred" transform="translate(800,800)">
+	<g id="fred" transform="translate(800,800), rotate(45)">
 		<circle r="20" style="fill:yellow; stroke:red"/>
+		<path d="m0,0 v-40" style="stroke:black"/>
 	</g>
 
 </svg>
 </div>
-<p>testing...</p>
+<p>A second canvas...</p>
 <div>
 <?xml version = "1.0" standalone = "yes"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="450" viewBox="0 0 1200 900" onload="init2(evt)">
 
-<script language="text/ecmascript" xlink:href="/D:/GitHub/svg/widgets/canvas/canvas.js"/>
+<script language="text/ecmascript" xlink:href="canvas.js"/>
 
 <script>
 <![CDATA[

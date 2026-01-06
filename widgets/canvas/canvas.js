@@ -3,8 +3,6 @@ function Canvas(evt) {
 
   this.viewbox = new ViewBox(evt.target);
 
-  this.getViewBox = new Function ( "return this.viewbox" );
-  
   this.getCoordinates = function(evt) {	  
 	return getCoordinates(evt, this.viewbox);
   };
@@ -14,17 +12,15 @@ function Canvas(evt) {
   };
 
   window.addEventListener("resize", this.resize(this.viewbox));
+  
+  return this;
 }
 
 
 function getCoordinates(evt, viewbox) {
 
-  var doc = evt.target.ownerDocument.documentElement;
-
   var bounds = viewbox.svg.getBoundingClientRect();
-  var left = evt.target.ownerDocument.scrollingElement.scrollLeft + bounds.left;
-  var top  = evt.target.ownerDocument.scrollingElement.scrollTop  - bounds.top;
-
+  
   var x = evt.offsetX / bounds.width * viewbox.width;
   var y = evt.offsetY / bounds.height * viewbox.height;
 
@@ -34,13 +30,6 @@ function getCoordinates(evt, viewbox) {
 
 function ViewBox(svgdoc) {
 	
-  ratio = svgdoc.preserveAspectRatio;
-
-  if ( ratio.baseVal.meetOrSlice == SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_NONE ) {
-	  
-	  console.log('preserveAspectRatio: none');
-  }
-  
   this.svg = svgdoc;
   
   var v = svgdoc.getAttribute('viewBox');
@@ -85,91 +74,12 @@ function _getZoom(svgdoc) {
 
 function moveElementTo(node, point) {
 
-	var transform = getSvgTransform(node);
-	
-	if (transform) {
-		
-		transform.xTranslate = point.x; transform.yTranslate = point.y;
-		node.setAttribute('transform', transform.getSvgTransformString());
-	}
-	else {
-		
-		var t = 'translate(' + point.x +',' + point.y + ')';
-		node.setAttribute('transform', t);
-	}
+	// Get the list of transforms. Consolidate it so the list is of length 1.
+	// Modify the Z,Y positions of the resulting transform.
+	var list = node.transform.baseVal;
+	list.consolidate();
+	list[0].matrix.e = point.x; list[0].matrix.f = point.y;
 }
-
-//////
-
-function getSvgTransform(target) {
-
-	const regexTranslate = /translate\((.+?)\)/;
-	const regexRotate = /rotate\((.+?)\)/;
-	const regexScale = /scale\((.+?)\)/;
-	
-	var transform = new Transform();
-	
-	var tfm = target.getAttribute('transform');
-	
-	if (tfm) {
-	
-		const matchTranslate = tfm.match(regexTranslate);
-		const matchRotate = tfm.match(regexRotate);
-		const matchScale = tfm.match(regexScale);
-	
-		if (matchTranslate) {
-			var t = matchTranslate[1].split(",");
-			transform.xTranslate = t[0]; transform.yTranslate = t[1];
-		}
-	
-		if (matchRotate) {
-			transform.rotate = matchRotate[1];
-		}
-		
-			
-		if (matchScale) {
-			var s = matchScale[1].split(",");
-			transform.xScale = s[0]; transform.yScale = s[1];
-		}	
-	}
-	
-	return transform;
-}
-
-
-function Transform() {
-
-	this.xTranslate = 0; this.yTranslate = 0;
-	this.xScale = 1; this.yScale = 1;
-	this.xSkew = 0; this.ySkew = 0;
-	this.rotate = 0;
-	
-	this.getSvgTransformString = new Function ( "return _getSvgTransformString(this)" );
-	
-	return this;
-}
-
-
-function _getSvgTransformString(transform) {
-	
-	// construct a string for the SVG transform attribute.
-	
-	var result = '';
-
-	result = result + 'translate(' + transform.xTranslate + ',' + transform.yTranslate + ')';
-
-	if ( transform.xScale != 1 ||  transform.yScale != 1 ) {
-		result = result + ' scale(' + transform.xScale + ',' + transform.yScale + ')';
-	}
-
-	if ( transform.rotate != 0 ) {
-		result = result + ' rotate(' + transform.rotate + ')';	
-	}
-
-	return result;
-}
-
-//////////////////////
 
 function Point(x,y) {
 	
