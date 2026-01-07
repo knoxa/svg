@@ -45,9 +45,7 @@ function init(evt) {
   drag   = new Drag();
 
   function mydrop(evt, target) {
-    console.log("target", target);
-    var xy = getPosition(target);
-    //console.log(xy);
+    console.log("target: ", target);
   }
   
   drag.dropCallback = mydrop;

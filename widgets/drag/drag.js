@@ -34,9 +34,10 @@ function _Drag_move (evt) {
     
     var newp =  new Point(newX, newY);
 
-	var transform = getSvgTransform(drag.target);
-	transform.xTranslate = newX; transform.yTranslate = newY;
-	drag.target.setAttribute('transform', transform.getSvgTransformString());
+    moveElementTo(drag.target, newp);
+//	var transform = getSvgTransform(drag.target);
+//	transform.xTranslate = newX; transform.yTranslate = newY;
+//	drag.target.setAttribute('transform', transform.getSvgTransformString());
     drag.moveCallback(drag.target, newX, newY);
   }
 }
@@ -108,7 +109,15 @@ return this;
 
 function getPosition(node) {
 
-  var transform = node.getCTM();
-  //return new Point(transform.e * _Canvas_viewbox.viewbox.stretchX, transform.f * _Canvas_viewbox.viewbox.stretchY);
-  return new Point(transform.e, transform.f);
+  var list = node.transform.baseVal;
+  list.consolidate();
+  var position = new Point(0.0, 0.0);
+
+  if ( list.length = 1 ) {
+	
+	var transform = list[0].matrix;
+	position.x = transform.e; position.y = transform.f;
+  }
+
+  return position;
 }

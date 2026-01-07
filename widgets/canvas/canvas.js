@@ -21,8 +21,8 @@ function getCoordinates(evt, viewbox) {
 
   var bounds = viewbox.svg.getBoundingClientRect();
   
-  var x = evt.offsetX / bounds.width * viewbox.width;
-  var y = evt.offsetY / bounds.height * viewbox.height;
+  var x = evt.offsetX / bounds.width * viewbox.width + viewbox.x;
+  var y = evt.offsetY / bounds.height * viewbox.height + viewbox.y;
 
   return new Point(Math.round(x*1000)/1000, Math.round(y*1000)/1000);
 }
