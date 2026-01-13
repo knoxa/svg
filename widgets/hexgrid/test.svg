@@ -1,0 +1,76 @@
+<?xml version = "1.0" standalone = "yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 3000 1732" preserveAspectRatio="none" onload="init(evt)">
+
+<script language="text/ecmascript" xlink:href="../canvas/canvas.js"/>
+
+<script>
+<![CDATA[
+
+
+function init(evt) {
+
+  canvas = new Canvas(evt);
+}
+
+function Hexagon() {
+
+	this.tileWidth  = 300.0;
+	this.tileHeight = 173.2;
+	
+	this.centreOffsetX = this.tileWidth / 2;
+	this.centreOffsetY = this.tileHeight / 2;
+	
+	return this;
+}
+
+function click(evt) {
+
+  var hexagon = new Hexagon();
+  var xy = canvas.getCoordinates(evt);
+
+  moveElementTo(document.getElementById("circle"), xy);
+  
+  var rx = Math.round((xy.x + hexagon.centreOffsetX) / hexagon.tileWidth);
+  var ry = Math.round((xy.y + hexagon.centreOffsetY) / hexagon.tileHeight); 
+  var red = new Point(rx * hexagon.tileWidth - hexagon.centreOffsetX, ry * hexagon.tileHeight - hexagon.centreOffsetY);
+  
+  var bx = Math.round(xy.x / hexagon.tileWidth);
+  var by = Math.round(xy.y / hexagon.tileHeight);
+  var blue = new Point(bx * hexagon.tileWidth, by * hexagon.tileHeight);
+
+  var dr = Math.sqrt((xy.x - red.x)**2 + (xy.y - red.y)**2);
+  var db = Math.sqrt((xy.x - blue.x)**2 + (xy.y - blue.y)**2);
+
+  if ( db < dr) moveElementTo(document.getElementById("hex"), blue);
+  else moveElementTo(document.getElementById("hex"), red);
+}
+
+]]>
+</script>
+
+
+<defs>
+  <pattern id="hexgrid" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="300" height="173.2">
+    <g id="yy" style="stroke:teal; fill:none; stroke-width:3">
+      <path d="M0,86.6 l50,0 l50,-86.6, l100,0, l50,86.6 l50,0 M50,86.6 l50,86.6 M250,86.6 l-50,86.6 l-100,0" />
+    </g>
+  </pattern>
+  
+  <polygon id="hexagon" points="-50,-86.6 50,-86.6 100,0 50,86.6 -50,86.6 -100,0"/>
+  
+</defs>
+
+<g id="background">
+
+<rect width="6000" height="3464" style="stroke:none; fill:url(#hexgrid)" onclick="click(evt)" />
+
+  <g id="circle" transform="translate(15300,16454)">
+    <circle r="100" style="fill:none; stroke:red"/>
+  </g>
+
+  <g id="hex" transform="translate(900,1038.6)">
+    <use xlink:href="#hexagon" style="fill:yellow; stroke:red; stroke-width:10"/>
+  </g>
+</g>
+
+</svg>

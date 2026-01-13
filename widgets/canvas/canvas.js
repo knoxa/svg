@@ -20,6 +20,7 @@ function Canvas(evt) {
 function getCoordinates(evt, viewbox) {
 
   var bounds = viewbox.svg.getBoundingClientRect();
+  //var rects = viewbox.svg.getClientRects();
   
   var x = evt.offsetX / bounds.width * viewbox.width + viewbox.x;
   var y = evt.offsetY / bounds.height * viewbox.height + viewbox.y;
@@ -29,6 +30,29 @@ function getCoordinates(evt, viewbox) {
 
 
 function ViewBox(svgdoc) {
+	
+  this.svg = svgdoc;
+  
+  var v = svgdoc.viewBox.baseVal;
+
+  this.doc = svgdoc;
+  this.x = v.x;
+  this.y = v.y;
+  this.width  = v.width;
+  this.height = v.height;
+  this.stretchX = 1.0;
+  this.stretchY = 1.0;
+  
+  this.zoom = _getZoom(svgdoc) 
+  
+  this.resize = new Function ( "_ViewBox_resize (this)" );
+  this.resize();
+
+  return this;
+}
+
+
+function ViewBoxX(svgdoc) {
 	
   this.svg = svgdoc;
   
