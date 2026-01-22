@@ -25,3 +25,6 @@ What behaviour do you want? There might be differing requirements on how an embe
 1. How [preserveAspectRatio](https://www.digitalocean.com/community/tutorials/svg-preserve-aspect-ratio) works.
 1. [SVG Trasformation Matrix](https://docs.aspose.com/svg/net/drawing-basics/transformation-matrix/)
 
+## See Also
+1. [Animation](https://jenkov.com/tutorials/svg/svg-animation.html)
+1. [Tutorials](https://www.petercollingridge.co.uk/tutorials/svg/)
