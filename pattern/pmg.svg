@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-1500 -1000 3000 2000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+<defs>
+
+	<g id="markers">
+		<path d="M0,0 L-100,0 L-100,50, L0,50 Z" style="fill:none; stroke:lightgrey; opacity:0.5"/>
+	</g>
+	
+	<g id="x">
+		<path d="M-80,35 h60 L-35,0" style="stroke:purple; stroke-width:5; stroke-linecap:round"/>
+		<path d="M-35,0 l-6,-14" style="stroke:purple; stroke-width:5; stroke-linecap:round"/>
+		<use xlink:href="#markers" />
+	</g>
+	
+	<g id="a" style="fill:none">
+		<use xlink:href="#x" />
+		<use xlink:href="#x" transform="translate(-50),rotate(-180),translate(50)"/>
+	</g>
+
+	<g id="b">
+		<use xlink:href="#a" />
+		<use xlink:href="#a" transform="translate(-50,-50),rotate(180),translate(50,50)"/>
+	</g>
+
+	<g id="markers">
+	<!-- centres of rotation -->
+		<circle cx="0" cy="0" r="5" style="fill:red" />
+		<circle cx="0" cy="100" r="5"/>
+		<circle cx="-100" cy="0" r="5"/>
+		<circle cx="-100" cy="100" r="5"/>
+	</g>
+	
+<pattern id="tile" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="200" height="100" viewBox="-100 -100 200 100">
+		<use xlink:href="#b" />
+		<use xlink:href="#b" transform="scale(-1,1)"/>
+</pattern>
+	
+</defs>
+
+<rect id="background" x="-1500" y="-1000" width="3000" height="2000" style="fill:url(#tile); stroke:none"/>
+
+</svg>

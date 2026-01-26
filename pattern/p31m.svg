@@ -3,10 +3,25 @@
 
 <defs>
 
-	<g id="a" style="fill:white; stroke:lightgrey">
-		<path d="M0,-86.6 L0,86.6 L150,0 Z"/>
-     	<path d="M120,-17.2 Q40,0 45,60.6" style="stroke:tomato; stroke-width:4; stroke-linecap:round"/>
-     	<path d="M0,-75 Q20,-80 15,-78" style="stroke:teal; stroke-width:2; stroke-linecap:round"/>
+	<g id="markers">
+		<path d="M0,-86.6 L0,86.6 L150,0 Z" style="fill:none; stroke:lightgrey; opacity:0.5"/>
+		<path d="M43.3,0 L150,0 M43.3,0 L0,-86.6 M43.3,0 L0,86.6" style="fill:none; stroke:lightgrey; opacity:0.5"/>
+	</g>
+	
+	<g id="x">
+     	<path d="M43,0 h-20 l-23.3,-20" style="stroke:tomato; stroke-width:4; stroke-linecap:round"/>
+     	<path d="M0,43.3 l10,-10 l5,5" style="stroke:teal; stroke-width:4; stroke-linecap:round"/>
+     	<path d="M0,-43.3 l10,10 l5,-5" style="stroke:teal; stroke-width:4; stroke-linecap:round"/>
+     	<circle cx="4" cy="65" r="3" style="stroke:none; fill:tomato"/>
+	</g>
+	
+	<g id="a" style="fill:none">
+     	<use xlink:href="#x"/>
+    	<use xlink:href="#x" transform="translate(43.3,0),rotate(120),translate(-43.3,0)"/>
+     	<use xlink:href="#x" transform="translate(43.3,0),rotate(-120),translate(-43.3,0)"/>
+     	<!-- 
+     	<use xlink:href="#markers"/>
+     	 -->
 	</g>
 	
 	<g id="d">

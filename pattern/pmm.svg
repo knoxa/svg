@@ -13,15 +13,13 @@
 		<use xlink:href="#a" transform="scale(-1,1)"/>
 	</g>
 	
-<pattern id="tile" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="200" height="200" viewBox="-100 -100 200 200">
-	<use xlink:href="#b" />
-	<use xlink:href="#b" transform="scale(1,-1)"/>
-</pattern>
+	<pattern id="tile" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="200" height="200" viewBox="-100 -100 200 200">
+		<use xlink:href="#b" />
+		<use xlink:href="#b" transform="scale(1,-1)"/>
+	</pattern>
 	
 </defs>
 
 <rect id="background" x="-1500" y="-1000" width="3000" height="2000" style="fill:url(#tile); stroke:none"/>
-
-<circle cx="0" cy="0" r="10"/>
 
 </svg>

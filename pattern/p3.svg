@@ -3,13 +3,19 @@
 
 <defs>
 
-	<g id="a" style="fill:white; stroke:lightgrey">
-		<path d="M0,-86.6 L0,86.6 L150,0 Z"/>
-     	<path d="M120,-17.2 Q40,0 45,60.6" style="stroke:tomato; stroke-width:4; stroke-linecap:round"/>
-     	<path d="M0,-75 Q20,-80 15,-78" style="stroke:teal; stroke-width:2; stroke-linecap:round"/>
-
-		<path d="M0,-86.6 L0,86.6 L-150,0 Z" style="fill:white; stroke:lightgrey"/>
-     	<path d="M-120,-17.2 Q0,0 -45,60.6" style="stroke:green; stroke-width:4; stroke-linecap:round"/>
+	<g id="markers">
+		<path d="M0,-86.6 L0,86.6 L150,0 Z" style="fill:none; stroke:lightgrey; opacity:0.5"/>
+		<circle cx="0" cy="0" r="2" style="fill:red"/>
+	</g>
+	
+	<g id="a" style="fill:none">
+     	<path d="M-85,-5 h40 v10 h-40 z" style="stroke:none; fill:teal"/>
+     	<path d="M150,-0 h-40" style="stroke:tomato; stroke-width:8; stroke-linecap:round"/>
+     	<path d="M0,86.6 v-40" style="stroke:tomato; stroke-width:4; stroke-linecap:round"/>
+    	<path d="M75,43.3 q-40,-40 0,-86.6 L0,-86.6" style="stroke:teal; stroke-width:8; stroke-linecap:round"/>
+     	<!-- 
+      	<use xlink:href="#markers"/>
+     	 -->
 	</g>
 
 	<g id="b">
@@ -31,8 +37,7 @@
 	
 </defs>
 
+<rect x="-1500" y="-1000" width="3000" height="2000" style="fill:linen; stroke:none"/>
 <rect id="background" x="-1500" y="-1000" width="3000" height="2000" style="fill:url(#tile); stroke:none"/>
-
-<circle cx="0" cy="0" r="10"/>
 
 </svg>
