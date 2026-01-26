@@ -4,8 +4,8 @@ Filenames are the [IUCr Symmetry notation](https://en.wikipedia.org/wiki/Interna
 
 The 17 [wallpaper groups](https://en.wikipedia.org/wiki/Wallpaper_group):
 
-* Reflection: [pmm](pmm.svg) (\*2222), [p3m1](p3m1.svg) (\*333), [p4m](p4m.svg) (\*442), [p6m](p6m.svg) (\*632)
+* Reflection: [pmm](pmm.svg) (\*2222), [p3m1](p3m1.svg) (\*333), [p4m](p4m.svg) (\*442), [p6m](p6m.svg) (\*632), [cm](pm.svg) (\*\*)
 * Rotation: [p2](p2.svg) (2222), [p3](p3.svg) (333), [p4](p4.svg) (442), [p6](p6.svg) (632)
 * Mixed: [cmm](cmm.svg) (2\*22), [p31m](p31m.svg) (3\*3), [p4g](p4g.svg) (4\*2), [pmg](pmg.svg) (22\*), [pgg](pgg.svg) (22x)
-* [cm](cm.svg) (\*x), [cm](pm.svg) (\*\*), [pg](pg.svg) (xx)
-* Translation: [p1](p1.svg) (o).
+* Glide Reflection: [cm](cm.svg) (\*x), [pg](pg.svg) (xx)
+* Translation: [p1](p1.svg) (o)

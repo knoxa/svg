@@ -24,10 +24,10 @@
 		<use xlink:href="#a" transform="translate(400,0)"/>
 	</g>
 	
-	<pattern id="tile" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="400" height="300" viewBox="-100 -100 400 300">
+	<pattern id="tile" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" width="400" height="200" viewBox="-150 -100 400 200">
 		<use xlink:href="#c"/>
-		<use xlink:href="#c" transform="translate(-100,0),scale(1,-1)"/>
-		<use xlink:href="#c" transform="translate(100,200),scale(1,-1)"/>
+		<use xlink:href="#c" transform="translate(100,100),scale(-1,1)"/>
+		<use xlink:href="#c" transform="translate(100,-100),scale(-1,1)"/>
 	</pattern>
 	
 </defs>
