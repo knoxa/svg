@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-100 -150 200 200" preserveAspectRatio="xMinYMin slice" width="800" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+<defs>
+
+   <path id="line" d="M-50,0 h45 l5,-45 l5,45 h45" style="fill:none"/>
+
+</defs>
+
+<g id="line2">
+	<use xlink:href="#line" transform="translate(-27.5),scale(0.45)"/>
+	<use xlink:href="#line" transform="translate(27.5),scale(0.45)"/>
+	<use xlink:href="#line" transform="translate(-2.5,-22.5),rotate(-83.7),scale(0.45)"/>
+	<use xlink:href="#line" transform="translate(2.5,-22.5),rotate(83.7),scale(0.45)"/>
+</g>
+
+<g id="line3">
+	<use xlink:href="#line2" transform="translate(-27.5),scale(0.45)"/>
+	<use xlink:href="#line2" transform="translate(27.5),scale(0.45)"/>
+	<use xlink:href="#line2" transform="translate(-2.5,-22.5),rotate(-83.7),scale(0.45)"/>
+	<use xlink:href="#line2" transform="translate(2.5,-22.5),rotate(83.7),scale(0.45)"/>
+</g>
+
+<g id="line4">
+	<use xlink:href="#line3" transform="translate(-27.5),scale(0.45)"/>
+	<use xlink:href="#line3" transform="translate(27.5),scale(0.45)"/>
+	<use xlink:href="#line3" transform="translate(-2.5,-22.5),rotate(-83.7),scale(0.45)"/>
+	<use xlink:href="#line3" transform="translate(2.5,-22.5),rotate(83.7),scale(0.45)"/>
+</g>
+
+<g style="fill:none; stroke:black; stroke-width:1">
+	<use xlink:href="#line4"/>
+	<use xlink:href="#line4" transform="translate(-50,-50),rotate(90)"/>
+	<use xlink:href="#line4" transform="translate(50,-50),rotate(-90)"/>
+	<use xlink:href="#line4" transform="translate(0,-100),scale(1,-1)"/>
+</g>
+
+</svg>
