@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-100 -100 1200 1200"
+	preserveAspectRatio="xMinYMin slice" width="800" height="800"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<g id="kite" style="fill:lavender; stroke:black">
+			<path d="M-100,0 L-19.0983,-58.7785 L0,0 L-19.0983,58.7785 Z" />
+			<path d="M-51.458,35.2671 A 60 60 0 0 0 -51.458,-35.2671" style="stroke:green; fill:none"/>
+			<path d="M-12.3607,38.0423 A 40 40 0 0 1 -12.3607,-38.0423" style="stroke:red; fill:none"/>
+		</g>
+
+		<g id="dart" style="fill:lavender; stroke:black">
+			<path d="M61.8020,0 L-19.0983,-58.7785 L0,0 L-19.0983,58.7785 Z" />
+			<path d="M-6.7372,20.7349 A 21.8020 21.8020 0 1 0 -6.7372,-20.7349" style="stroke:red; fill:none"/>
+			<path d="M29.4413,23.5114 A 40 40 0 0 1 29.4413,-23.5114" style="stroke:green; fill:none"/>
+		</g>
+
+		<g id="star">
+			<use xlink:href="#dart" />
+			<use xlink:href="#dart" transform="translate(61.8020,0),rotate(72),translate(-61.8020,0)" />	
+			<use xlink:href="#dart" transform="translate(61.8020,0),rotate(-72),translate(-61.8020,0)" />	
+			<use xlink:href="#dart" transform="translate(61.8020,0),rotate(144),translate(-61.8020,0)" />	
+			<use xlink:href="#dart" transform="translate(61.8020,0),rotate(-144),translate(-61.8020,0)" />	
+		</g>
+
+
+		<g id="ace">
+			<use xlink:href="#kite" />
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(72),translate(100,0)" />	
+			<use xlink:href="#dart" transform="translate(-100,0),rotate(36),translate(100,0)" />
+		</g>
+	
+		<g id="sun">
+			<use xlink:href="#kite" />
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(72),translate(100,0)" />	
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(-72),translate(100,0)" />	
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(144),translate(100,0)" />	
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(-144),translate(100,0)" />	
+		</g>
+
+		<g id="king">
+			<use xlink:href="#kite" />
+			<use xlink:href="#kite" transform="rotate(144)" />
+			<use xlink:href="#dart" transform="translate(-80.9107,-58.7785)" />	
+			<use xlink:href="#dart" transform="translate(-38.198,-117.5570),rotate(72)" />	
+			<use xlink:href="#dart" transform="translate(30.9017,-95.10565),rotate(144)" />	
+		</g>
+
+		<g id="jack">
+			<use xlink:href="#kite" />
+			<use xlink:href="#dart" transform="translate(-19.0983,58.7785),rotate(36)" />	
+			<use xlink:href="#dart" transform="translate(-19.0983,-58.7785),rotate(-36)" />	
+			<use xlink:href="#kite" transform="translate(80.9017,-58.7785),rotate(-36)"/>
+			<use xlink:href="#kite" transform="translate(80.9017,58.7785),rotate(36)"/>
+		</g>
+		
+		<g id="queen">
+			<use xlink:href="#kite" />
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(72),translate(100,0)" />	
+			<use xlink:href="#kite" transform="translate(-100,0),rotate(72),translate(100,0)" />	
+			<use xlink:href="#dart" transform="translate(-80.9003,58.7785),translate(61.8020,0),rotate(216),translate(-61.8020,0)"/>
+			<use xlink:href="#kite" transform="rotate(216)" />
+			<use xlink:href="#kite" transform="translate(-69.0983,95.1056),rotate(216)" />
+		</g>
+		
+		<g id="deuce">
+			<use xlink:href="#dart" />	
+			<use xlink:href="#dart" transform="translate(61.8020,0),rotate(72),translate(-61.8020,0)" />	
+			<use xlink:href="#kite" transform="translate(-19.0983,-58.7785),rotate(-36)" />
+			<use xlink:href="#kite" transform="translate(-19.0983,-58.7785),rotate(108)" />
+		</g>
+		
+	</defs>
+
+	<g>
+	
+		<use xlink:href="#kite" />
+		<use xlink:href="#dart" transform="translate(20,0)"/>
+		
+	</g>
+	
+	<g transform="translate(0,200)">
+		<use xlink:href="#star" />
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(300,200)">
+		<use xlink:href="#ace" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(600,200)">
+		<use xlink:href="#sun" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(900,200)">
+		<use xlink:href="#king" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(0,500)">
+		<use xlink:href="#jack" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(300,500)">
+		<use xlink:href="#queen" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+
+	<g transform="translate(600,500)">
+		<use xlink:href="#deuce" />	
+		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
+	</g>
+	
+</svg>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-20 -20 300 300"
+	preserveAspectRatio="xMinYMin slice" width="800" height="800"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+	<!-- https://en.wikipedia.org/wiki/Ammann%E2%80%93Beenker_tiling#Description_of_the_tiles -->
+
+		<path id="a" d="M0,0 v100 h41.42 v41.42 h100 v-100 h-41.42 v-41.42 z" style="fill:lavender" />
+
+		<path id="b" d="M0,0 v141.42 h41.42 v-41.42 h58.58 v-100 z" style="fill:pink"  />
+
+	
+	<g id="a1" transform="scale(0.4142,0.4142)">
+		<use xlink:href="#a" />
+		<use xlink:href="#a" transform="translate(100,241.42),rotate(-90)"/>
+		<use xlink:href="#a" transform="translate(200,200)"/>
+
+		<use xlink:href="#b" transform="translate(341.42,100),scale(-1,1)"/>
+		<use xlink:href="#b" transform="translate(0,241.42),rotate(180),scale(-1,1)"/>
+		<use xlink:href="#b" transform="translate(241.42,0),rotate(90)"/>
+		<use xlink:href="#b" transform="translate(100,341.42),rotate(-90)"/>
+	</g>
+	
+	<g id="b1" transform="scale(0.4142,0.4142)" >
+		<use xlink:href="#a" transform="translate(0,100)" />
+		<use xlink:href="#a" transform="translate(100,141.42),rotate(-90)"/>
+		<use xlink:href="#b" transform="rotate(-90),scale(-1,1)" />
+		<use xlink:href="#b" transform="translate(241.42,241.42),rotate(180)" />
+		<use xlink:href="#b" transform="translate(0,341.42),rotate(180),scale(-1,1)" />
+	</g>
+	
+	<g id="a2" transform="scale(0.4142,0.4142)">
+		<use xlink:href="#a1" />
+		<use xlink:href="#a1" transform="translate(100,241.42),rotate(-90)"/>
+		<use xlink:href="#a1" transform="translate(200,200)"/>
+
+		<use xlink:href="#b1" transform="translate(341.42,100),scale(-1,1)"/>
+		<use xlink:href="#b1" transform="translate(0,241.42),rotate(180),scale(-1,1)"/>
+		<use xlink:href="#b1" transform="translate(241.42,0),rotate(90)"/>
+		<use xlink:href="#b1" transform="translate(100,341.42),rotate(-90)"/>
+	</g>
+	
+	<g id="b2" transform="scale(0.4142,0.4142)" >
+		<use xlink:href="#a1" transform="translate(0,100)" />
+		<use xlink:href="#a1" transform="translate(100,141.42),rotate(-90)"/>
+		<use xlink:href="#b1" transform="rotate(-90),scale(-1,1)" />
+		<use xlink:href="#b1" transform="translate(241.42,241.42),rotate(180)" />
+		<use xlink:href="#b1" transform="translate(0,341.42),rotate(180),scale(-1,1)" />
+	</g>
+
+	</defs>
+
+	<g style="stroke:white">
+	
+	<use xlink:href="#a1" style="stroke:white"/>
+	<use xlink:href="#b1" transform="translate(150)" style="stroke:white"/>
+	
+	
+	</g>
+	
+	<g id="a3" transform="translate(0,150),scale(0.4142,0.4142)" style="stroke:black">
+		<use xlink:href="#a2" />
+		<use xlink:href="#a2" transform="translate(100,241.42),rotate(-90)"/>
+		<use xlink:href="#a2" transform="translate(200,200)"/>
+
+		<use xlink:href="#b2" transform="translate(341.42,100),scale(-1,1)"/>
+		<use xlink:href="#b2" transform="translate(0,241.42),rotate(180),scale(-1,1)"/>
+		<use xlink:href="#b2" transform="translate(241.42,0),rotate(90)"/>
+		<use xlink:href="#b2" transform="translate(100,341.42),rotate(-90)"/>
+	</g>
+	
+	<g id="b3" transform="translate(150,150),scale(0.4142,0.4142)" style="stroke:black" >
+		<use xlink:href="#a2" transform="translate(0,100)" />
+		<use xlink:href="#a2" transform="translate(100,141.42),rotate(-90)"/>
+		<use xlink:href="#b2" transform="rotate(-90),scale(-1,1)" />
+		<use xlink:href="#b2" transform="translate(241.42,241.42),rotate(180)" />
+		<use xlink:href="#b2" transform="translate(0,341.42),rotate(180),scale(-1,1)" />
+	</g>
+
+</svg>
