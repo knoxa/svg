@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="-150 -80 500 500"
+	preserveAspectRatio="xMinYMin slice" width="800" height="800"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs>
+		<g id="half-kite" style="fill:lavender; stroke:lavender">
+			<path d="M-100,0 L-19.0983,-58.7785 L0,0 Z" />
+			<path d="M-100,0 L-19.0983,-58.7785 L0,0" style="fill:none; stroke:black"/>
+			<path d="M-40,0 A 60 60 0 0 0 -51.458,-35.2671" style="stroke:green; fill:none;stroke-width:2"/>
+			<path d="M-40,0 A 40 40 0 0 1 -12.3607,-38.0423" style="stroke:red; fill:none; stroke-width:2"/>
+		</g>
+
+		<g id="half-dart" style="fill:lightgrey; stroke:none">
+			<path d="M61.8020,0 L-19.0983,-58.7785 L0,0 Z" />
+			<path d="M61.8020,0 L-19.0983,-58.7785 L0,0"  style="fill:none; stroke:black"/>
+			<path d="M21.8020,0 A 21.8020 21.8020 0 0 0 -6.7372,-20.7349" style="stroke:red; fill:none; stroke-width:2"/>
+			<path d="M21.8020,0 A 40 40 0 0 1 29.4413,-23.5114" style="stroke:green; fill:none; stroke-width:2"/>
+		</g>
+		
+		<g id="half-kite1" transform="scale(0.618039,0.618039),translate(-61.80339,0)">
+			<use xlink:href="#half-kite" transform="rotate(108)"/>
+			<use xlink:href="#half-kite" transform="rotate(108),scale(1,-1)"/>
+			<use xlink:href="#half-dart" transform="rotate(144),translate(19.0983,58.7785)"/>
+		</g>
+		
+		<g id="half-dart1" transform="scale(0.618039,0.618039)">
+			<use xlink:href="#half-kite" transform="scale(-1,1)"/>
+			<use xlink:href="#half-dart" transform="rotate(-144),translate(19.0983,58.7785)"/>
+		</g>
+		
+		<g id="half-kite2" transform="scale(0.618039,0.618039),translate(-61.80339,0)">
+			<use xlink:href="#half-kite1" transform="rotate(108)"/>
+			<use xlink:href="#half-kite1" transform="rotate(108),scale(1,-1)"/>
+			<use xlink:href="#half-dart1" transform="rotate(144),translate(19.0983,58.7785)"/>
+		</g>
+		
+		<g id="half-dart2" transform="scale(0.618039,0.618039)">
+			<use xlink:href="#half-kite1" transform="scale(-1,1)"/>
+			<use xlink:href="#half-dart1" transform="rotate(-144),translate(19.0983,58.7785)"/>
+		</g>
+		
+		<g id="half-kite3" transform="scale(0.618039,0.618039),translate(-61.80339,0)">
+			<use xlink:href="#half-kite2" transform="rotate(108)"/>
+			<use xlink:href="#half-kite2" transform="rotate(108),scale(1,-1)"/>
+			<use xlink:href="#half-dart2" transform="rotate(144),translate(19.0983,58.7785)"/>
+		</g>
+		
+		<g id="half-dart3" transform="scale(0.618039,0.618039)">
+			<use xlink:href="#half-kite2" transform="scale(-1,1)"/>
+			<use xlink:href="#half-dart2" transform="rotate(-144),translate(19.0983,58.7785)"/>
+		</g>
+
+		<g id="kite3">
+			<use xlink:href="#half-kite3"/>
+			<use xlink:href="#half-kite3" transform="scale(1,-1)"/>
+		</g>
+
+	</defs>
+
+	<g>	
+		<use xlink:href="#half-kite" />
+		<use xlink:href="#half-dart" transform="translate(20,0)"/>		
+	</g>
+
+	<g transform="translate(200,0)">
+	<!-- substitution rules -->	
+		<use xlink:href="#half-kite1" />
+		<use xlink:href="#half-dart1" transform="translate(20,0)"/>		
+	</g>
+	
+	<g transform="translate(60,150),translate(-61.80339,0)">
+		<use xlink:href="#half-kite3" transform="rotate(108)"/>
+		<use xlink:href="#half-kite3" transform="rotate(108),scale(1,-1)"/>
+		<use xlink:href="#half-dart3" transform="rotate(144),translate(19.0983,58.7785)"/>
+	</g>
+	
+	<g transform="translate(100,150)">
+		<use xlink:href="#half-kite3" transform="scale(-1,1)"/>
+		<use xlink:href="#half-dart3" transform="rotate(-144),translate(19.0983,58.7785)"/>
+	</g>
+	
+	
+	<g id="sun3" transform="translate(100,300)">
+		<use xlink:href="#kite3"/>
+		<use xlink:href="#kite3" transform="translate(-100,0),rotate(72),translate(100,0)" />	
+		<use xlink:href="#kite3" transform="translate(-100,0),rotate(-72),translate(100,0)" />	
+		<use xlink:href="#kite3" transform="translate(-100,0),rotate(144),translate(100,0)" />	
+		<use xlink:href="#kite3" transform="translate(-100,0),rotate(-144),translate(100,0)" />	
+	</g>
+
+</svg>
