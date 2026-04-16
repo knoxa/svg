@@ -7,4 +7,4 @@ and [Ammann A4](https://tilings.math.uni-bielefeld.de/substitution/ammann-a4/).
 My Efforts:
 
 * [Penrose P2 tiles](penrose-p2.svg) (kite and dart) and [P2 half-tiles](penrose-p2-half.svg)
-* [Amman A4 tiles](amman-a4.svg).
+* [Ammann A4 tiles](ammann-a4.svg).

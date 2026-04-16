@@ -3,5 +3,5 @@
 ## Examples
 
 * [Calendar](calender)
-* Tilings: [periodic](walllpaper) and [aperiodic](aperiodic)
+* Tilings: [periodic](wallpaper) and [aperiodic](aperiodic)
 * [Fractals](fractal)
