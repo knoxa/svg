@@ -80,6 +80,7 @@
 <xsl:variable name="viewbox" select="concat($xday, ' ', $yday + 17, ' 9 9')"/>
 <svg:g id="{@id}" transform="translate({$xday},{$yday})" onclick="zoomDay(evt, '{$viewbox}')">
   <svg:rect width="9" height="9" class="{$dayclass}" />
+  <xsl:apply-templates select="." mode="overlay"/>
   <svg:text x="8.5" y="2" style="font-size:2px; fill:black; text-anchor:end"><xsl:value-of select="position()"/></svg:text>
 </svg:g>
 </xsl:template>

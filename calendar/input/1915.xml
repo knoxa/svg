@@ -1,391 +1,391 @@
 <year id="1915">
-<month id="191501" monthOfYear="0">
-<day id="19150101" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150102" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150103" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150104" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150105" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150106" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150107" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150108" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150109" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150110" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150111" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150112" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150113" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150114" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150115" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150116" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150117" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150118" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150119" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150120" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150121" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150122" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150123" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150124" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150125" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150126" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150127" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19150128" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19150129" dayOfWeek="5" weekOfMonth="4"/>
-<day id="19150130" dayOfWeek="6" weekOfMonth="4"/>
-<day id="19150131" dayOfWeek="0" weekOfMonth="5"/>
+<month id="191501" monthOfYear="0" label="January 1914">
+<day id="19150101" dayOfWeek="5" weekOfMonth="0" dayOfMonth="0" dayOfYear="0"/>
+<day id="19150102" dayOfWeek="6" weekOfMonth="0" dayOfMonth="1" dayOfYear="1"/>
+<day id="19150103" dayOfWeek="0" weekOfMonth="1" dayOfMonth="2" dayOfYear="2"/>
+<day id="19150104" dayOfWeek="1" weekOfMonth="1" dayOfMonth="3" dayOfYear="3"/>
+<day id="19150105" dayOfWeek="2" weekOfMonth="1" dayOfMonth="4" dayOfYear="4"/>
+<day id="19150106" dayOfWeek="3" weekOfMonth="1" dayOfMonth="5" dayOfYear="5"/>
+<day id="19150107" dayOfWeek="4" weekOfMonth="1" dayOfMonth="6" dayOfYear="6"/>
+<day id="19150108" dayOfWeek="5" weekOfMonth="1" dayOfMonth="7" dayOfYear="7"/>
+<day id="19150109" dayOfWeek="6" weekOfMonth="1" dayOfMonth="8" dayOfYear="8"/>
+<day id="19150110" dayOfWeek="0" weekOfMonth="2" dayOfMonth="9" dayOfYear="9"/>
+<day id="19150111" dayOfWeek="1" weekOfMonth="2" dayOfMonth="10" dayOfYear="10"/>
+<day id="19150112" dayOfWeek="2" weekOfMonth="2" dayOfMonth="11" dayOfYear="11"/>
+<day id="19150113" dayOfWeek="3" weekOfMonth="2" dayOfMonth="12" dayOfYear="12"/>
+<day id="19150114" dayOfWeek="4" weekOfMonth="2" dayOfMonth="13" dayOfYear="13"/>
+<day id="19150115" dayOfWeek="5" weekOfMonth="2" dayOfMonth="14" dayOfYear="14"/>
+<day id="19150116" dayOfWeek="6" weekOfMonth="2" dayOfMonth="15" dayOfYear="15"/>
+<day id="19150117" dayOfWeek="0" weekOfMonth="3" dayOfMonth="16" dayOfYear="16"/>
+<day id="19150118" dayOfWeek="1" weekOfMonth="3" dayOfMonth="17" dayOfYear="17"/>
+<day id="19150119" dayOfWeek="2" weekOfMonth="3" dayOfMonth="18" dayOfYear="18"/>
+<day id="19150120" dayOfWeek="3" weekOfMonth="3" dayOfMonth="19" dayOfYear="19"/>
+<day id="19150121" dayOfWeek="4" weekOfMonth="3" dayOfMonth="20" dayOfYear="20"/>
+<day id="19150122" dayOfWeek="5" weekOfMonth="3" dayOfMonth="21" dayOfYear="21"/>
+<day id="19150123" dayOfWeek="6" weekOfMonth="3" dayOfMonth="22" dayOfYear="22"/>
+<day id="19150124" dayOfWeek="0" weekOfMonth="4" dayOfMonth="23" dayOfYear="23"/>
+<day id="19150125" dayOfWeek="1" weekOfMonth="4" dayOfMonth="24" dayOfYear="24"/>
+<day id="19150126" dayOfWeek="2" weekOfMonth="4" dayOfMonth="25" dayOfYear="25"/>
+<day id="19150127" dayOfWeek="3" weekOfMonth="4" dayOfMonth="26" dayOfYear="26"/>
+<day id="19150128" dayOfWeek="4" weekOfMonth="4" dayOfMonth="27" dayOfYear="27"/>
+<day id="19150129" dayOfWeek="5" weekOfMonth="4" dayOfMonth="28" dayOfYear="28"/>
+<day id="19150130" dayOfWeek="6" weekOfMonth="4" dayOfMonth="29" dayOfYear="29"/>
+<day id="19150131" dayOfWeek="0" weekOfMonth="5" dayOfMonth="30" dayOfYear="30"/>
 </month>
-<month id="191502" monthOfYear="1">
-<day id="19150201" dayOfWeek="1" weekOfMonth="0"/>
-<day id="19150202" dayOfWeek="2" weekOfMonth="0"/>
-<day id="19150203" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19150204" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150205" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150206" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150207" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150208" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150209" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150210" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150211" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150212" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150213" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150214" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150215" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150216" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150217" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150218" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150219" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150220" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150221" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150222" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150223" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150224" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150225" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150226" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150227" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150228" dayOfWeek="0" weekOfMonth="4"/>
+<month id="191502" monthOfYear="1" label="February 1915">
+<day id="19150201" dayOfWeek="1" weekOfMonth="0" dayOfMonth="0" dayOfYear="31"/>
+<day id="19150202" dayOfWeek="2" weekOfMonth="0" dayOfMonth="1" dayOfYear="32"/>
+<day id="19150203" dayOfWeek="3" weekOfMonth="0" dayOfMonth="2" dayOfYear="33"/>
+<day id="19150204" dayOfWeek="4" weekOfMonth="0" dayOfMonth="3" dayOfYear="34"/>
+<day id="19150205" dayOfWeek="5" weekOfMonth="0" dayOfMonth="4" dayOfYear="35"/>
+<day id="19150206" dayOfWeek="6" weekOfMonth="0" dayOfMonth="5" dayOfYear="36"/>
+<day id="19150207" dayOfWeek="0" weekOfMonth="1" dayOfMonth="6" dayOfYear="37"/>
+<day id="19150208" dayOfWeek="1" weekOfMonth="1" dayOfMonth="7" dayOfYear="38"/>
+<day id="19150209" dayOfWeek="2" weekOfMonth="1" dayOfMonth="8" dayOfYear="39"/>
+<day id="19150210" dayOfWeek="3" weekOfMonth="1" dayOfMonth="9" dayOfYear="40"/>
+<day id="19150211" dayOfWeek="4" weekOfMonth="1" dayOfMonth="10" dayOfYear="41"/>
+<day id="19150212" dayOfWeek="5" weekOfMonth="1" dayOfMonth="11" dayOfYear="42"/>
+<day id="19150213" dayOfWeek="6" weekOfMonth="1" dayOfMonth="12" dayOfYear="43"/>
+<day id="19150214" dayOfWeek="0" weekOfMonth="2" dayOfMonth="13" dayOfYear="44"/>
+<day id="19150215" dayOfWeek="1" weekOfMonth="2" dayOfMonth="14" dayOfYear="45"/>
+<day id="19150216" dayOfWeek="2" weekOfMonth="2" dayOfMonth="15" dayOfYear="46"/>
+<day id="19150217" dayOfWeek="3" weekOfMonth="2" dayOfMonth="16" dayOfYear="47"/>
+<day id="19150218" dayOfWeek="4" weekOfMonth="2" dayOfMonth="17" dayOfYear="48"/>
+<day id="19150219" dayOfWeek="5" weekOfMonth="2" dayOfMonth="18" dayOfYear="49"/>
+<day id="19150220" dayOfWeek="6" weekOfMonth="2" dayOfMonth="19" dayOfYear="50"/>
+<day id="19150221" dayOfWeek="0" weekOfMonth="3" dayOfMonth="20" dayOfYear="51"/>
+<day id="19150222" dayOfWeek="1" weekOfMonth="3" dayOfMonth="21" dayOfYear="52"/>
+<day id="19150223" dayOfWeek="2" weekOfMonth="3" dayOfMonth="22" dayOfYear="53"/>
+<day id="19150224" dayOfWeek="3" weekOfMonth="3" dayOfMonth="23" dayOfYear="54"/>
+<day id="19150225" dayOfWeek="4" weekOfMonth="3" dayOfMonth="24" dayOfYear="55"/>
+<day id="19150226" dayOfWeek="5" weekOfMonth="3" dayOfMonth="25" dayOfYear="56"/>
+<day id="19150227" dayOfWeek="6" weekOfMonth="3" dayOfMonth="26" dayOfYear="57"/>
+<day id="19150228" dayOfWeek="0" weekOfMonth="4" dayOfMonth="27" dayOfYear="58"/>
 </month>
-<month id="191503" monthOfYear="2">
-<day id="19150301" dayOfWeek="1" weekOfMonth="0"/>
-<day id="19150302" dayOfWeek="2" weekOfMonth="0"/>
-<day id="19150303" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19150304" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150305" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150306" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150307" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150308" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150309" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150310" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150311" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150312" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150313" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150314" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150315" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150316" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150317" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150318" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150319" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150320" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150321" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150322" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150323" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150324" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150325" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150326" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150327" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150328" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150329" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150330" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150331" dayOfWeek="3" weekOfMonth="4"/>
+<month id="191503" monthOfYear="2" label="March 1915">
+<day id="19150301" dayOfWeek="1" weekOfMonth="0" dayOfMonth="0" dayOfYear="59"/>
+<day id="19150302" dayOfWeek="2" weekOfMonth="0" dayOfMonth="1" dayOfYear="60"/>
+<day id="19150303" dayOfWeek="3" weekOfMonth="0" dayOfMonth="2" dayOfYear="61"/>
+<day id="19150304" dayOfWeek="4" weekOfMonth="0" dayOfMonth="3" dayOfYear="62"/>
+<day id="19150305" dayOfWeek="5" weekOfMonth="0" dayOfMonth="4" dayOfYear="63"/>
+<day id="19150306" dayOfWeek="6" weekOfMonth="0" dayOfMonth="5" dayOfYear="64"/>
+<day id="19150307" dayOfWeek="0" weekOfMonth="1" dayOfMonth="6" dayOfYear="65"/>
+<day id="19150308" dayOfWeek="1" weekOfMonth="1" dayOfMonth="7" dayOfYear="66"/>
+<day id="19150309" dayOfWeek="2" weekOfMonth="1" dayOfMonth="8" dayOfYear="67"/>
+<day id="19150310" dayOfWeek="3" weekOfMonth="1" dayOfMonth="9" dayOfYear="68"/>
+<day id="19150311" dayOfWeek="4" weekOfMonth="1" dayOfMonth="10" dayOfYear="69"/>
+<day id="19150312" dayOfWeek="5" weekOfMonth="1" dayOfMonth="11" dayOfYear="70"/>
+<day id="19150313" dayOfWeek="6" weekOfMonth="1" dayOfMonth="12" dayOfYear="71"/>
+<day id="19150314" dayOfWeek="0" weekOfMonth="2" dayOfMonth="13" dayOfYear="72"/>
+<day id="19150315" dayOfWeek="1" weekOfMonth="2" dayOfMonth="14" dayOfYear="73"/>
+<day id="19150316" dayOfWeek="2" weekOfMonth="2" dayOfMonth="15" dayOfYear="74"/>
+<day id="19150317" dayOfWeek="3" weekOfMonth="2" dayOfMonth="16" dayOfYear="75"/>
+<day id="19150318" dayOfWeek="4" weekOfMonth="2" dayOfMonth="17" dayOfYear="76"/>
+<day id="19150319" dayOfWeek="5" weekOfMonth="2" dayOfMonth="18" dayOfYear="77"/>
+<day id="19150320" dayOfWeek="6" weekOfMonth="2" dayOfMonth="19" dayOfYear="78"/>
+<day id="19150321" dayOfWeek="0" weekOfMonth="3" dayOfMonth="20" dayOfYear="79"/>
+<day id="19150322" dayOfWeek="1" weekOfMonth="3" dayOfMonth="21" dayOfYear="80"/>
+<day id="19150323" dayOfWeek="2" weekOfMonth="3" dayOfMonth="22" dayOfYear="81"/>
+<day id="19150324" dayOfWeek="3" weekOfMonth="3" dayOfMonth="23" dayOfYear="82"/>
+<day id="19150325" dayOfWeek="4" weekOfMonth="3" dayOfMonth="24" dayOfYear="83"/>
+<day id="19150326" dayOfWeek="5" weekOfMonth="3" dayOfMonth="25" dayOfYear="84"/>
+<day id="19150327" dayOfWeek="6" weekOfMonth="3" dayOfMonth="26" dayOfYear="85"/>
+<day id="19150328" dayOfWeek="0" weekOfMonth="4" dayOfMonth="27" dayOfYear="86"/>
+<day id="19150329" dayOfWeek="1" weekOfMonth="4" dayOfMonth="28" dayOfYear="87"/>
+<day id="19150330" dayOfWeek="2" weekOfMonth="4" dayOfMonth="29" dayOfYear="88"/>
+<day id="19150331" dayOfWeek="3" weekOfMonth="4" dayOfMonth="30" dayOfYear="89"/>
 </month>
-<month id="191504" monthOfYear="3">
-<day id="19150401" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150402" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150403" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150404" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150405" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150406" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150407" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150408" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150409" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150410" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150411" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150412" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150413" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150414" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150415" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150416" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150417" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150418" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150419" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150420" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150421" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150422" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150423" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150424" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150425" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150426" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150427" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150428" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19150429" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19150430" dayOfWeek="5" weekOfMonth="4"/>
+<month id="191504" monthOfYear="3" label="April 1915">
+<day id="19150401" dayOfWeek="4" weekOfMonth="0" dayOfMonth="0" dayOfYear="90"/>
+<day id="19150402" dayOfWeek="5" weekOfMonth="0" dayOfMonth="1" dayOfYear="91"/>
+<day id="19150403" dayOfWeek="6" weekOfMonth="0" dayOfMonth="2" dayOfYear="92"/>
+<day id="19150404" dayOfWeek="0" weekOfMonth="1" dayOfMonth="3" dayOfYear="93"/>
+<day id="19150405" dayOfWeek="1" weekOfMonth="1" dayOfMonth="4" dayOfYear="94"/>
+<day id="19150406" dayOfWeek="2" weekOfMonth="1" dayOfMonth="5" dayOfYear="95"/>
+<day id="19150407" dayOfWeek="3" weekOfMonth="1" dayOfMonth="6" dayOfYear="96"/>
+<day id="19150408" dayOfWeek="4" weekOfMonth="1" dayOfMonth="7" dayOfYear="97"/>
+<day id="19150409" dayOfWeek="5" weekOfMonth="1" dayOfMonth="8" dayOfYear="98"/>
+<day id="19150410" dayOfWeek="6" weekOfMonth="1" dayOfMonth="9" dayOfYear="99"/>
+<day id="19150411" dayOfWeek="0" weekOfMonth="2" dayOfMonth="10" dayOfYear="100"/>
+<day id="19150412" dayOfWeek="1" weekOfMonth="2" dayOfMonth="11" dayOfYear="101"/>
+<day id="19150413" dayOfWeek="2" weekOfMonth="2" dayOfMonth="12" dayOfYear="102"/>
+<day id="19150414" dayOfWeek="3" weekOfMonth="2" dayOfMonth="13" dayOfYear="103"/>
+<day id="19150415" dayOfWeek="4" weekOfMonth="2" dayOfMonth="14" dayOfYear="104"/>
+<day id="19150416" dayOfWeek="5" weekOfMonth="2" dayOfMonth="15" dayOfYear="105"/>
+<day id="19150417" dayOfWeek="6" weekOfMonth="2" dayOfMonth="16" dayOfYear="106"/>
+<day id="19150418" dayOfWeek="0" weekOfMonth="3" dayOfMonth="17" dayOfYear="107"/>
+<day id="19150419" dayOfWeek="1" weekOfMonth="3" dayOfMonth="18" dayOfYear="108"/>
+<day id="19150420" dayOfWeek="2" weekOfMonth="3" dayOfMonth="19" dayOfYear="109"/>
+<day id="19150421" dayOfWeek="3" weekOfMonth="3" dayOfMonth="20" dayOfYear="110"/>
+<day id="19150422" dayOfWeek="4" weekOfMonth="3" dayOfMonth="21" dayOfYear="111"/>
+<day id="19150423" dayOfWeek="5" weekOfMonth="3" dayOfMonth="22" dayOfYear="112"/>
+<day id="19150424" dayOfWeek="6" weekOfMonth="3" dayOfMonth="23" dayOfYear="113"/>
+<day id="19150425" dayOfWeek="0" weekOfMonth="4" dayOfMonth="24" dayOfYear="114"/>
+<day id="19150426" dayOfWeek="1" weekOfMonth="4" dayOfMonth="25" dayOfYear="115"/>
+<day id="19150427" dayOfWeek="2" weekOfMonth="4" dayOfMonth="26" dayOfYear="116"/>
+<day id="19150428" dayOfWeek="3" weekOfMonth="4" dayOfMonth="27" dayOfYear="117"/>
+<day id="19150429" dayOfWeek="4" weekOfMonth="4" dayOfMonth="28" dayOfYear="118"/>
+<day id="19150430" dayOfWeek="5" weekOfMonth="4" dayOfMonth="29" dayOfYear="119"/>
 </month>
-<month id="191505" monthOfYear="4">
-<day id="19150501" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150502" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150503" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150504" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150505" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150506" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150507" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150508" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150509" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150510" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150511" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150512" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150513" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150514" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150515" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150516" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150517" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150518" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150519" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150520" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150521" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150522" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150523" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150524" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150525" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150526" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19150527" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19150528" dayOfWeek="5" weekOfMonth="4"/>
-<day id="19150529" dayOfWeek="6" weekOfMonth="4"/>
-<day id="19150530" dayOfWeek="0" weekOfMonth="5"/>
-<day id="19150531" dayOfWeek="1" weekOfMonth="5"/>
+<month id="191505" monthOfYear="4" label="May 1915">
+<day id="19150501" dayOfWeek="6" weekOfMonth="0" dayOfMonth="0" dayOfYear="120"/>
+<day id="19150502" dayOfWeek="0" weekOfMonth="1" dayOfMonth="1" dayOfYear="121"/>
+<day id="19150503" dayOfWeek="1" weekOfMonth="1" dayOfMonth="2" dayOfYear="122"/>
+<day id="19150504" dayOfWeek="2" weekOfMonth="1" dayOfMonth="3" dayOfYear="123"/>
+<day id="19150505" dayOfWeek="3" weekOfMonth="1" dayOfMonth="4" dayOfYear="124"/>
+<day id="19150506" dayOfWeek="4" weekOfMonth="1" dayOfMonth="5" dayOfYear="125"/>
+<day id="19150507" dayOfWeek="5" weekOfMonth="1" dayOfMonth="6" dayOfYear="126"/>
+<day id="19150508" dayOfWeek="6" weekOfMonth="1" dayOfMonth="7" dayOfYear="127"/>
+<day id="19150509" dayOfWeek="0" weekOfMonth="2" dayOfMonth="8" dayOfYear="128"/>
+<day id="19150510" dayOfWeek="1" weekOfMonth="2" dayOfMonth="9" dayOfYear="129"/>
+<day id="19150511" dayOfWeek="2" weekOfMonth="2" dayOfMonth="10" dayOfYear="130"/>
+<day id="19150512" dayOfWeek="3" weekOfMonth="2" dayOfMonth="11" dayOfYear="131"/>
+<day id="19150513" dayOfWeek="4" weekOfMonth="2" dayOfMonth="12" dayOfYear="132"/>
+<day id="19150514" dayOfWeek="5" weekOfMonth="2" dayOfMonth="13" dayOfYear="133"/>
+<day id="19150515" dayOfWeek="6" weekOfMonth="2" dayOfMonth="14" dayOfYear="134"/>
+<day id="19150516" dayOfWeek="0" weekOfMonth="3" dayOfMonth="15" dayOfYear="135"/>
+<day id="19150517" dayOfWeek="1" weekOfMonth="3" dayOfMonth="16" dayOfYear="136"/>
+<day id="19150518" dayOfWeek="2" weekOfMonth="3" dayOfMonth="17" dayOfYear="137"/>
+<day id="19150519" dayOfWeek="3" weekOfMonth="3" dayOfMonth="18" dayOfYear="138"/>
+<day id="19150520" dayOfWeek="4" weekOfMonth="3" dayOfMonth="19" dayOfYear="139"/>
+<day id="19150521" dayOfWeek="5" weekOfMonth="3" dayOfMonth="20" dayOfYear="140"/>
+<day id="19150522" dayOfWeek="6" weekOfMonth="3" dayOfMonth="21" dayOfYear="141"/>
+<day id="19150523" dayOfWeek="0" weekOfMonth="4" dayOfMonth="22" dayOfYear="142"/>
+<day id="19150524" dayOfWeek="1" weekOfMonth="4" dayOfMonth="23" dayOfYear="143"/>
+<day id="19150525" dayOfWeek="2" weekOfMonth="4" dayOfMonth="24" dayOfYear="144"/>
+<day id="19150526" dayOfWeek="3" weekOfMonth="4" dayOfMonth="25" dayOfYear="145"/>
+<day id="19150527" dayOfWeek="4" weekOfMonth="4" dayOfMonth="26" dayOfYear="146"/>
+<day id="19150528" dayOfWeek="5" weekOfMonth="4" dayOfMonth="27" dayOfYear="147"/>
+<day id="19150529" dayOfWeek="6" weekOfMonth="4" dayOfMonth="28" dayOfYear="148"/>
+<day id="19150530" dayOfWeek="0" weekOfMonth="5" dayOfMonth="29" dayOfYear="149"/>
+<day id="19150531" dayOfWeek="1" weekOfMonth="5" dayOfMonth="30" dayOfYear="150"/>
 </month>
-<month id="191506" monthOfYear="5">
-<day id="19150601" dayOfWeek="2" weekOfMonth="0"/>
-<day id="19150602" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19150603" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150604" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150605" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150606" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150607" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150608" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150609" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150610" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150611" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150612" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150613" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150614" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150615" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150616" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150617" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150618" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150619" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150620" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150621" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150622" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150623" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150624" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150625" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150626" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150627" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150628" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150629" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150630" dayOfWeek="3" weekOfMonth="4"/>
+<month id="191506" monthOfYear="5" label="June 1915">
+<day id="19150601" dayOfWeek="2" weekOfMonth="0" dayOfMonth="0" dayOfYear="151"/>
+<day id="19150602" dayOfWeek="3" weekOfMonth="0" dayOfMonth="1" dayOfYear="152"/>
+<day id="19150603" dayOfWeek="4" weekOfMonth="0" dayOfMonth="2" dayOfYear="153"/>
+<day id="19150604" dayOfWeek="5" weekOfMonth="0" dayOfMonth="3" dayOfYear="154"/>
+<day id="19150605" dayOfWeek="6" weekOfMonth="0" dayOfMonth="4" dayOfYear="155"/>
+<day id="19150606" dayOfWeek="0" weekOfMonth="1" dayOfMonth="5" dayOfYear="156"/>
+<day id="19150607" dayOfWeek="1" weekOfMonth="1" dayOfMonth="6" dayOfYear="157"/>
+<day id="19150608" dayOfWeek="2" weekOfMonth="1" dayOfMonth="7" dayOfYear="158"/>
+<day id="19150609" dayOfWeek="3" weekOfMonth="1" dayOfMonth="8" dayOfYear="159"/>
+<day id="19150610" dayOfWeek="4" weekOfMonth="1" dayOfMonth="9" dayOfYear="160"/>
+<day id="19150611" dayOfWeek="5" weekOfMonth="1" dayOfMonth="10" dayOfYear="161"/>
+<day id="19150612" dayOfWeek="6" weekOfMonth="1" dayOfMonth="11" dayOfYear="162"/>
+<day id="19150613" dayOfWeek="0" weekOfMonth="2" dayOfMonth="12" dayOfYear="163"/>
+<day id="19150614" dayOfWeek="1" weekOfMonth="2" dayOfMonth="13" dayOfYear="164"/>
+<day id="19150615" dayOfWeek="2" weekOfMonth="2" dayOfMonth="14" dayOfYear="165"/>
+<day id="19150616" dayOfWeek="3" weekOfMonth="2" dayOfMonth="15" dayOfYear="166"/>
+<day id="19150617" dayOfWeek="4" weekOfMonth="2" dayOfMonth="16" dayOfYear="167"/>
+<day id="19150618" dayOfWeek="5" weekOfMonth="2" dayOfMonth="17" dayOfYear="168"/>
+<day id="19150619" dayOfWeek="6" weekOfMonth="2" dayOfMonth="18" dayOfYear="169"/>
+<day id="19150620" dayOfWeek="0" weekOfMonth="3" dayOfMonth="19" dayOfYear="170"/>
+<day id="19150621" dayOfWeek="1" weekOfMonth="3" dayOfMonth="20" dayOfYear="171"/>
+<day id="19150622" dayOfWeek="2" weekOfMonth="3" dayOfMonth="21" dayOfYear="172"/>
+<day id="19150623" dayOfWeek="3" weekOfMonth="3" dayOfMonth="22" dayOfYear="173"/>
+<day id="19150624" dayOfWeek="4" weekOfMonth="3" dayOfMonth="23" dayOfYear="174"/>
+<day id="19150625" dayOfWeek="5" weekOfMonth="3" dayOfMonth="24" dayOfYear="175"/>
+<day id="19150626" dayOfWeek="6" weekOfMonth="3" dayOfMonth="25" dayOfYear="176"/>
+<day id="19150627" dayOfWeek="0" weekOfMonth="4" dayOfMonth="26" dayOfYear="177"/>
+<day id="19150628" dayOfWeek="1" weekOfMonth="4" dayOfMonth="27" dayOfYear="178"/>
+<day id="19150629" dayOfWeek="2" weekOfMonth="4" dayOfMonth="28" dayOfYear="179"/>
+<day id="19150630" dayOfWeek="3" weekOfMonth="4" dayOfMonth="29" dayOfYear="180"/>
 </month>
-<month id="191507" monthOfYear="6">
-<day id="19150701" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150702" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150703" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150704" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150705" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150706" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150707" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150708" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150709" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150710" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150711" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150712" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150713" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150714" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150715" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150716" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150717" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150718" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150719" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150720" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150721" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150722" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150723" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150724" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150725" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150726" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150727" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150728" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19150729" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19150730" dayOfWeek="5" weekOfMonth="4"/>
-<day id="19150731" dayOfWeek="6" weekOfMonth="4"/>
+<month id="191507" monthOfYear="6" label="July 1915">
+<day id="19150701" dayOfWeek="4" weekOfMonth="0" dayOfMonth="0" dayOfYear="181"/>
+<day id="19150702" dayOfWeek="5" weekOfMonth="0" dayOfMonth="1" dayOfYear="182"/>
+<day id="19150703" dayOfWeek="6" weekOfMonth="0" dayOfMonth="2" dayOfYear="183"/>
+<day id="19150704" dayOfWeek="0" weekOfMonth="1" dayOfMonth="3" dayOfYear="184"/>
+<day id="19150705" dayOfWeek="1" weekOfMonth="1" dayOfMonth="4" dayOfYear="185"/>
+<day id="19150706" dayOfWeek="2" weekOfMonth="1" dayOfMonth="5" dayOfYear="186"/>
+<day id="19150707" dayOfWeek="3" weekOfMonth="1" dayOfMonth="6" dayOfYear="187"/>
+<day id="19150708" dayOfWeek="4" weekOfMonth="1" dayOfMonth="7" dayOfYear="188"/>
+<day id="19150709" dayOfWeek="5" weekOfMonth="1" dayOfMonth="8" dayOfYear="189"/>
+<day id="19150710" dayOfWeek="6" weekOfMonth="1" dayOfMonth="9" dayOfYear="190"/>
+<day id="19150711" dayOfWeek="0" weekOfMonth="2" dayOfMonth="10" dayOfYear="191"/>
+<day id="19150712" dayOfWeek="1" weekOfMonth="2" dayOfMonth="11" dayOfYear="192"/>
+<day id="19150713" dayOfWeek="2" weekOfMonth="2" dayOfMonth="12" dayOfYear="193"/>
+<day id="19150714" dayOfWeek="3" weekOfMonth="2" dayOfMonth="13" dayOfYear="194"/>
+<day id="19150715" dayOfWeek="4" weekOfMonth="2" dayOfMonth="14" dayOfYear="195"/>
+<day id="19150716" dayOfWeek="5" weekOfMonth="2" dayOfMonth="15" dayOfYear="196"/>
+<day id="19150717" dayOfWeek="6" weekOfMonth="2" dayOfMonth="16" dayOfYear="197"/>
+<day id="19150718" dayOfWeek="0" weekOfMonth="3" dayOfMonth="17" dayOfYear="198"/>
+<day id="19150719" dayOfWeek="1" weekOfMonth="3" dayOfMonth="18" dayOfYear="199"/>
+<day id="19150720" dayOfWeek="2" weekOfMonth="3" dayOfMonth="19" dayOfYear="200"/>
+<day id="19150721" dayOfWeek="3" weekOfMonth="3" dayOfMonth="20" dayOfYear="201"/>
+<day id="19150722" dayOfWeek="4" weekOfMonth="3" dayOfMonth="21" dayOfYear="202"/>
+<day id="19150723" dayOfWeek="5" weekOfMonth="3" dayOfMonth="22" dayOfYear="203"/>
+<day id="19150724" dayOfWeek="6" weekOfMonth="3" dayOfMonth="23" dayOfYear="204"/>
+<day id="19150725" dayOfWeek="0" weekOfMonth="4" dayOfMonth="24" dayOfYear="205"/>
+<day id="19150726" dayOfWeek="1" weekOfMonth="4" dayOfMonth="25" dayOfYear="206"/>
+<day id="19150727" dayOfWeek="2" weekOfMonth="4" dayOfMonth="26" dayOfYear="207"/>
+<day id="19150728" dayOfWeek="3" weekOfMonth="4" dayOfMonth="27" dayOfYear="208"/>
+<day id="19150729" dayOfWeek="4" weekOfMonth="4" dayOfMonth="28" dayOfYear="209"/>
+<day id="19150730" dayOfWeek="5" weekOfMonth="4" dayOfMonth="29" dayOfYear="210"/>
+<day id="19150731" dayOfWeek="6" weekOfMonth="4" dayOfMonth="30" dayOfYear="211"/>
 </month>
-<month id="191508" monthOfYear="7">
-<day id="19150801" dayOfWeek="0" weekOfMonth="0"/>
-<day id="19150802" dayOfWeek="1" weekOfMonth="0"/>
-<day id="19150803" dayOfWeek="2" weekOfMonth="0"/>
-<day id="19150804" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19150805" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150806" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150807" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150808" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150809" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150810" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150811" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150812" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150813" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150814" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150815" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150816" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150817" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150818" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150819" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150820" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150821" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150822" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150823" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150824" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150825" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150826" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150827" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150828" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150829" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150830" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150831" dayOfWeek="2" weekOfMonth="4"/>
+<month id="191508" monthOfYear="7" label="August 1915">
+<day id="19150801" dayOfWeek="0" weekOfMonth="0" dayOfMonth="0" dayOfYear="212"/>
+<day id="19150802" dayOfWeek="1" weekOfMonth="0" dayOfMonth="1" dayOfYear="213"/>
+<day id="19150803" dayOfWeek="2" weekOfMonth="0" dayOfMonth="2" dayOfYear="214"/>
+<day id="19150804" dayOfWeek="3" weekOfMonth="0" dayOfMonth="3" dayOfYear="215"/>
+<day id="19150805" dayOfWeek="4" weekOfMonth="0" dayOfMonth="4" dayOfYear="216"/>
+<day id="19150806" dayOfWeek="5" weekOfMonth="0" dayOfMonth="5" dayOfYear="217"/>
+<day id="19150807" dayOfWeek="6" weekOfMonth="0" dayOfMonth="6" dayOfYear="218"/>
+<day id="19150808" dayOfWeek="0" weekOfMonth="1" dayOfMonth="7" dayOfYear="219"/>
+<day id="19150809" dayOfWeek="1" weekOfMonth="1" dayOfMonth="8" dayOfYear="220"/>
+<day id="19150810" dayOfWeek="2" weekOfMonth="1" dayOfMonth="9" dayOfYear="221"/>
+<day id="19150811" dayOfWeek="3" weekOfMonth="1" dayOfMonth="10" dayOfYear="222"/>
+<day id="19150812" dayOfWeek="4" weekOfMonth="1" dayOfMonth="11" dayOfYear="223"/>
+<day id="19150813" dayOfWeek="5" weekOfMonth="1" dayOfMonth="12" dayOfYear="224"/>
+<day id="19150814" dayOfWeek="6" weekOfMonth="1" dayOfMonth="13" dayOfYear="225"/>
+<day id="19150815" dayOfWeek="0" weekOfMonth="2" dayOfMonth="14" dayOfYear="226"/>
+<day id="19150816" dayOfWeek="1" weekOfMonth="2" dayOfMonth="15" dayOfYear="227"/>
+<day id="19150817" dayOfWeek="2" weekOfMonth="2" dayOfMonth="16" dayOfYear="228"/>
+<day id="19150818" dayOfWeek="3" weekOfMonth="2" dayOfMonth="17" dayOfYear="229"/>
+<day id="19150819" dayOfWeek="4" weekOfMonth="2" dayOfMonth="18" dayOfYear="230"/>
+<day id="19150820" dayOfWeek="5" weekOfMonth="2" dayOfMonth="19" dayOfYear="231"/>
+<day id="19150821" dayOfWeek="6" weekOfMonth="2" dayOfMonth="20" dayOfYear="232"/>
+<day id="19150822" dayOfWeek="0" weekOfMonth="3" dayOfMonth="21" dayOfYear="233"/>
+<day id="19150823" dayOfWeek="1" weekOfMonth="3" dayOfMonth="22" dayOfYear="234"/>
+<day id="19150824" dayOfWeek="2" weekOfMonth="3" dayOfMonth="23" dayOfYear="235"/>
+<day id="19150825" dayOfWeek="3" weekOfMonth="3" dayOfMonth="24" dayOfYear="236"/>
+<day id="19150826" dayOfWeek="4" weekOfMonth="3" dayOfMonth="25" dayOfYear="237"/>
+<day id="19150827" dayOfWeek="5" weekOfMonth="3" dayOfMonth="26" dayOfYear="238"/>
+<day id="19150828" dayOfWeek="6" weekOfMonth="3" dayOfMonth="27" dayOfYear="239"/>
+<day id="19150829" dayOfWeek="0" weekOfMonth="4" dayOfMonth="28" dayOfYear="240"/>
+<day id="19150830" dayOfWeek="1" weekOfMonth="4" dayOfMonth="29" dayOfYear="241"/>
+<day id="19150831" dayOfWeek="2" weekOfMonth="4" dayOfMonth="30" dayOfYear="242"/>
 </month>
-<month id="191509" monthOfYear="8">
-<day id="19150901" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19150902" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19150903" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19150904" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19150905" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19150906" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19150907" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19150908" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19150909" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19150910" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19150911" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19150912" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19150913" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19150914" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19150915" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19150916" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19150917" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19150918" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19150919" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19150920" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19150921" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19150922" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19150923" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19150924" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19150925" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19150926" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19150927" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19150928" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19150929" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19150930" dayOfWeek="4" weekOfMonth="4"/>
+<month id="191509" monthOfYear="8" label="September 1915">
+<day id="19150901" dayOfWeek="3" weekOfMonth="0" dayOfMonth="0" dayOfYear="243"/>
+<day id="19150902" dayOfWeek="4" weekOfMonth="0" dayOfMonth="1" dayOfYear="244"/>
+<day id="19150903" dayOfWeek="5" weekOfMonth="0" dayOfMonth="2" dayOfYear="245"/>
+<day id="19150904" dayOfWeek="6" weekOfMonth="0" dayOfMonth="3" dayOfYear="246"/>
+<day id="19150905" dayOfWeek="0" weekOfMonth="1" dayOfMonth="4" dayOfYear="247"/>
+<day id="19150906" dayOfWeek="1" weekOfMonth="1" dayOfMonth="5" dayOfYear="248"/>
+<day id="19150907" dayOfWeek="2" weekOfMonth="1" dayOfMonth="6" dayOfYear="249"/>
+<day id="19150908" dayOfWeek="3" weekOfMonth="1" dayOfMonth="7" dayOfYear="250"/>
+<day id="19150909" dayOfWeek="4" weekOfMonth="1" dayOfMonth="8" dayOfYear="251"/>
+<day id="19150910" dayOfWeek="5" weekOfMonth="1" dayOfMonth="9" dayOfYear="252"/>
+<day id="19150911" dayOfWeek="6" weekOfMonth="1" dayOfMonth="10" dayOfYear="253"/>
+<day id="19150912" dayOfWeek="0" weekOfMonth="2" dayOfMonth="11" dayOfYear="254"/>
+<day id="19150913" dayOfWeek="1" weekOfMonth="2" dayOfMonth="12" dayOfYear="255"/>
+<day id="19150914" dayOfWeek="2" weekOfMonth="2" dayOfMonth="13" dayOfYear="256"/>
+<day id="19150915" dayOfWeek="3" weekOfMonth="2" dayOfMonth="14" dayOfYear="257"/>
+<day id="19150916" dayOfWeek="4" weekOfMonth="2" dayOfMonth="15" dayOfYear="258"/>
+<day id="19150917" dayOfWeek="5" weekOfMonth="2" dayOfMonth="16" dayOfYear="259"/>
+<day id="19150918" dayOfWeek="6" weekOfMonth="2" dayOfMonth="17" dayOfYear="260"/>
+<day id="19150919" dayOfWeek="0" weekOfMonth="3" dayOfMonth="18" dayOfYear="261"/>
+<day id="19150920" dayOfWeek="1" weekOfMonth="3" dayOfMonth="19" dayOfYear="262"/>
+<day id="19150921" dayOfWeek="2" weekOfMonth="3" dayOfMonth="20" dayOfYear="263"/>
+<day id="19150922" dayOfWeek="3" weekOfMonth="3" dayOfMonth="21" dayOfYear="264"/>
+<day id="19150923" dayOfWeek="4" weekOfMonth="3" dayOfMonth="22" dayOfYear="265"/>
+<day id="19150924" dayOfWeek="5" weekOfMonth="3" dayOfMonth="23" dayOfYear="266"/>
+<day id="19150925" dayOfWeek="6" weekOfMonth="3" dayOfMonth="24" dayOfYear="267"/>
+<day id="19150926" dayOfWeek="0" weekOfMonth="4" dayOfMonth="25" dayOfYear="268"/>
+<day id="19150927" dayOfWeek="1" weekOfMonth="4" dayOfMonth="26" dayOfYear="269"/>
+<day id="19150928" dayOfWeek="2" weekOfMonth="4" dayOfMonth="27" dayOfYear="270"/>
+<day id="19150929" dayOfWeek="3" weekOfMonth="4" dayOfMonth="28" dayOfYear="271"/>
+<day id="19150930" dayOfWeek="4" weekOfMonth="4" dayOfMonth="29" dayOfYear="272"/>
 </month>
-<month id="191510" monthOfYear="9">
-<day id="19151001" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19151002" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19151003" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19151004" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19151005" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19151006" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19151007" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19151008" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19151009" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19151010" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19151011" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19151012" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19151013" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19151014" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19151015" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19151016" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19151017" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19151018" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19151019" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19151020" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19151021" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19151022" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19151023" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19151024" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19151025" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19151026" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19151027" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19151028" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19151029" dayOfWeek="5" weekOfMonth="4"/>
-<day id="19151030" dayOfWeek="6" weekOfMonth="4"/>
-<day id="19151031" dayOfWeek="0" weekOfMonth="5"/>
+<month id="191510" monthOfYear="9" label="October 1915">
+<day id="19151001" dayOfWeek="5" weekOfMonth="0" dayOfMonth="0" dayOfYear="273"/>
+<day id="19151002" dayOfWeek="6" weekOfMonth="0" dayOfMonth="1" dayOfYear="274"/>
+<day id="19151003" dayOfWeek="0" weekOfMonth="1" dayOfMonth="2" dayOfYear="275"/>
+<day id="19151004" dayOfWeek="1" weekOfMonth="1" dayOfMonth="3" dayOfYear="276"/>
+<day id="19151005" dayOfWeek="2" weekOfMonth="1" dayOfMonth="4" dayOfYear="277"/>
+<day id="19151006" dayOfWeek="3" weekOfMonth="1" dayOfMonth="5" dayOfYear="278"/>
+<day id="19151007" dayOfWeek="4" weekOfMonth="1" dayOfMonth="6" dayOfYear="279"/>
+<day id="19151008" dayOfWeek="5" weekOfMonth="1" dayOfMonth="7" dayOfYear="280"/>
+<day id="19151009" dayOfWeek="6" weekOfMonth="1" dayOfMonth="8" dayOfYear="281"/>
+<day id="19151010" dayOfWeek="0" weekOfMonth="2" dayOfMonth="9" dayOfYear="282"/>
+<day id="19151011" dayOfWeek="1" weekOfMonth="2" dayOfMonth="10" dayOfYear="283"/>
+<day id="19151012" dayOfWeek="2" weekOfMonth="2" dayOfMonth="11" dayOfYear="284"/>
+<day id="19151013" dayOfWeek="3" weekOfMonth="2" dayOfMonth="12" dayOfYear="285"/>
+<day id="19151014" dayOfWeek="4" weekOfMonth="2" dayOfMonth="13" dayOfYear="286"/>
+<day id="19151015" dayOfWeek="5" weekOfMonth="2" dayOfMonth="14" dayOfYear="287"/>
+<day id="19151016" dayOfWeek="6" weekOfMonth="2" dayOfMonth="15" dayOfYear="288"/>
+<day id="19151017" dayOfWeek="0" weekOfMonth="3" dayOfMonth="16" dayOfYear="289"/>
+<day id="19151018" dayOfWeek="1" weekOfMonth="3" dayOfMonth="17" dayOfYear="290"/>
+<day id="19151019" dayOfWeek="2" weekOfMonth="3" dayOfMonth="18" dayOfYear="291"/>
+<day id="19151020" dayOfWeek="3" weekOfMonth="3" dayOfMonth="19" dayOfYear="292"/>
+<day id="19151021" dayOfWeek="4" weekOfMonth="3" dayOfMonth="20" dayOfYear="293"/>
+<day id="19151022" dayOfWeek="5" weekOfMonth="3" dayOfMonth="21" dayOfYear="294"/>
+<day id="19151023" dayOfWeek="6" weekOfMonth="3" dayOfMonth="22" dayOfYear="295"/>
+<day id="19151024" dayOfWeek="0" weekOfMonth="4" dayOfMonth="23" dayOfYear="296"/>
+<day id="19151025" dayOfWeek="1" weekOfMonth="4" dayOfMonth="24" dayOfYear="297"/>
+<day id="19151026" dayOfWeek="2" weekOfMonth="4" dayOfMonth="25" dayOfYear="298"/>
+<day id="19151027" dayOfWeek="3" weekOfMonth="4" dayOfMonth="26" dayOfYear="299"/>
+<day id="19151028" dayOfWeek="4" weekOfMonth="4" dayOfMonth="27" dayOfYear="300"/>
+<day id="19151029" dayOfWeek="5" weekOfMonth="4" dayOfMonth="28" dayOfYear="301"/>
+<day id="19151030" dayOfWeek="6" weekOfMonth="4" dayOfMonth="29" dayOfYear="302"/>
+<day id="19151031" dayOfWeek="0" weekOfMonth="5" dayOfMonth="30" dayOfYear="303"/>
 </month>
-<month id="191511" monthOfYear="10">
-<day id="19151101" dayOfWeek="1" weekOfMonth="0"/>
-<day id="19151102" dayOfWeek="2" weekOfMonth="0"/>
-<day id="19151103" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19151104" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19151105" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19151106" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19151107" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19151108" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19151109" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19151110" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19151111" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19151112" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19151113" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19151114" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19151115" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19151116" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19151117" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19151118" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19151119" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19151120" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19151121" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19151122" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19151123" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19151124" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19151125" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19151126" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19151127" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19151128" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19151129" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19151130" dayOfWeek="2" weekOfMonth="4"/>
+<month id="191511" monthOfYear="10" label="November 1915">
+<day id="19151101" dayOfWeek="1" weekOfMonth="0" dayOfMonth="0" dayOfYear="304"/>
+<day id="19151102" dayOfWeek="2" weekOfMonth="0" dayOfMonth="1" dayOfYear="305"/>
+<day id="19151103" dayOfWeek="3" weekOfMonth="0" dayOfMonth="2" dayOfYear="306"/>
+<day id="19151104" dayOfWeek="4" weekOfMonth="0" dayOfMonth="3" dayOfYear="307"/>
+<day id="19151105" dayOfWeek="5" weekOfMonth="0" dayOfMonth="4" dayOfYear="308"/>
+<day id="19151106" dayOfWeek="6" weekOfMonth="0" dayOfMonth="5" dayOfYear="309"/>
+<day id="19151107" dayOfWeek="0" weekOfMonth="1" dayOfMonth="6" dayOfYear="310"/>
+<day id="19151108" dayOfWeek="1" weekOfMonth="1" dayOfMonth="7" dayOfYear="311"/>
+<day id="19151109" dayOfWeek="2" weekOfMonth="1" dayOfMonth="8" dayOfYear="312"/>
+<day id="19151110" dayOfWeek="3" weekOfMonth="1" dayOfMonth="9" dayOfYear="313"/>
+<day id="19151111" dayOfWeek="4" weekOfMonth="1" dayOfMonth="10" dayOfYear="314"/>
+<day id="19151112" dayOfWeek="5" weekOfMonth="1" dayOfMonth="11" dayOfYear="315"/>
+<day id="19151113" dayOfWeek="6" weekOfMonth="1" dayOfMonth="12" dayOfYear="316"/>
+<day id="19151114" dayOfWeek="0" weekOfMonth="2" dayOfMonth="13" dayOfYear="317"/>
+<day id="19151115" dayOfWeek="1" weekOfMonth="2" dayOfMonth="14" dayOfYear="318"/>
+<day id="19151116" dayOfWeek="2" weekOfMonth="2" dayOfMonth="15" dayOfYear="319"/>
+<day id="19151117" dayOfWeek="3" weekOfMonth="2" dayOfMonth="16" dayOfYear="320"/>
+<day id="19151118" dayOfWeek="4" weekOfMonth="2" dayOfMonth="17" dayOfYear="321"/>
+<day id="19151119" dayOfWeek="5" weekOfMonth="2" dayOfMonth="18" dayOfYear="322"/>
+<day id="19151120" dayOfWeek="6" weekOfMonth="2" dayOfMonth="19" dayOfYear="323"/>
+<day id="19151121" dayOfWeek="0" weekOfMonth="3" dayOfMonth="20" dayOfYear="324"/>
+<day id="19151122" dayOfWeek="1" weekOfMonth="3" dayOfMonth="21" dayOfYear="325"/>
+<day id="19151123" dayOfWeek="2" weekOfMonth="3" dayOfMonth="22" dayOfYear="326"/>
+<day id="19151124" dayOfWeek="3" weekOfMonth="3" dayOfMonth="23" dayOfYear="327"/>
+<day id="19151125" dayOfWeek="4" weekOfMonth="3" dayOfMonth="24" dayOfYear="328"/>
+<day id="19151126" dayOfWeek="5" weekOfMonth="3" dayOfMonth="25" dayOfYear="329"/>
+<day id="19151127" dayOfWeek="6" weekOfMonth="3" dayOfMonth="26" dayOfYear="330"/>
+<day id="19151128" dayOfWeek="0" weekOfMonth="4" dayOfMonth="27" dayOfYear="331"/>
+<day id="19151129" dayOfWeek="1" weekOfMonth="4" dayOfMonth="28" dayOfYear="332"/>
+<day id="19151130" dayOfWeek="2" weekOfMonth="4" dayOfMonth="29" dayOfYear="333"/>
 </month>
-<month id="191512" monthOfYear="11">
-<day id="19151201" dayOfWeek="3" weekOfMonth="0"/>
-<day id="19151202" dayOfWeek="4" weekOfMonth="0"/>
-<day id="19151203" dayOfWeek="5" weekOfMonth="0"/>
-<day id="19151204" dayOfWeek="6" weekOfMonth="0"/>
-<day id="19151205" dayOfWeek="0" weekOfMonth="1"/>
-<day id="19151206" dayOfWeek="1" weekOfMonth="1"/>
-<day id="19151207" dayOfWeek="2" weekOfMonth="1"/>
-<day id="19151208" dayOfWeek="3" weekOfMonth="1"/>
-<day id="19151209" dayOfWeek="4" weekOfMonth="1"/>
-<day id="19151210" dayOfWeek="5" weekOfMonth="1"/>
-<day id="19151211" dayOfWeek="6" weekOfMonth="1"/>
-<day id="19151212" dayOfWeek="0" weekOfMonth="2"/>
-<day id="19151213" dayOfWeek="1" weekOfMonth="2"/>
-<day id="19151214" dayOfWeek="2" weekOfMonth="2"/>
-<day id="19151215" dayOfWeek="3" weekOfMonth="2"/>
-<day id="19151216" dayOfWeek="4" weekOfMonth="2"/>
-<day id="19151217" dayOfWeek="5" weekOfMonth="2"/>
-<day id="19151218" dayOfWeek="6" weekOfMonth="2"/>
-<day id="19151219" dayOfWeek="0" weekOfMonth="3"/>
-<day id="19151220" dayOfWeek="1" weekOfMonth="3"/>
-<day id="19151221" dayOfWeek="2" weekOfMonth="3"/>
-<day id="19151222" dayOfWeek="3" weekOfMonth="3"/>
-<day id="19151223" dayOfWeek="4" weekOfMonth="3"/>
-<day id="19151224" dayOfWeek="5" weekOfMonth="3"/>
-<day id="19151225" dayOfWeek="6" weekOfMonth="3"/>
-<day id="19151226" dayOfWeek="0" weekOfMonth="4"/>
-<day id="19151227" dayOfWeek="1" weekOfMonth="4"/>
-<day id="19151228" dayOfWeek="2" weekOfMonth="4"/>
-<day id="19151229" dayOfWeek="3" weekOfMonth="4"/>
-<day id="19151230" dayOfWeek="4" weekOfMonth="4"/>
-<day id="19151231" dayOfWeek="5" weekOfMonth="4"/>
+<month id="191512" monthOfYear="11" label="December 1915">
+<day id="19151201" dayOfWeek="3" weekOfMonth="0" dayOfMonth="0" dayOfYear="334"/>
+<day id="19151202" dayOfWeek="4" weekOfMonth="0" dayOfMonth="1" dayOfYear="335"/>
+<day id="19151203" dayOfWeek="5" weekOfMonth="0" dayOfMonth="2" dayOfYear="336"/>
+<day id="19151204" dayOfWeek="6" weekOfMonth="0" dayOfMonth="3" dayOfYear="337"/>
+<day id="19151205" dayOfWeek="0" weekOfMonth="1" dayOfMonth="4" dayOfYear="338"/>
+<day id="19151206" dayOfWeek="1" weekOfMonth="1" dayOfMonth="5" dayOfYear="339"/>
+<day id="19151207" dayOfWeek="2" weekOfMonth="1" dayOfMonth="6" dayOfYear="340"/>
+<day id="19151208" dayOfWeek="3" weekOfMonth="1" dayOfMonth="7" dayOfYear="341"/>
+<day id="19151209" dayOfWeek="4" weekOfMonth="1" dayOfMonth="8" dayOfYear="342"/>
+<day id="19151210" dayOfWeek="5" weekOfMonth="1" dayOfMonth="9" dayOfYear="343"/>
+<day id="19151211" dayOfWeek="6" weekOfMonth="1" dayOfMonth="10" dayOfYear="344"/>
+<day id="19151212" dayOfWeek="0" weekOfMonth="2" dayOfMonth="11" dayOfYear="345"/>
+<day id="19151213" dayOfWeek="1" weekOfMonth="2" dayOfMonth="12" dayOfYear="346"/>
+<day id="19151214" dayOfWeek="2" weekOfMonth="2" dayOfMonth="13" dayOfYear="347"/>
+<day id="19151215" dayOfWeek="3" weekOfMonth="2" dayOfMonth="14" dayOfYear="348"/>
+<day id="19151216" dayOfWeek="4" weekOfMonth="2" dayOfMonth="15" dayOfYear="349"/>
+<day id="19151217" dayOfWeek="5" weekOfMonth="2" dayOfMonth="16" dayOfYear="350"/>
+<day id="19151218" dayOfWeek="6" weekOfMonth="2" dayOfMonth="17" dayOfYear="351"/>
+<day id="19151219" dayOfWeek="0" weekOfMonth="3" dayOfMonth="18" dayOfYear="352"/>
+<day id="19151220" dayOfWeek="1" weekOfMonth="3" dayOfMonth="19" dayOfYear="353"/>
+<day id="19151221" dayOfWeek="2" weekOfMonth="3" dayOfMonth="20" dayOfYear="354"/>
+<day id="19151222" dayOfWeek="3" weekOfMonth="3" dayOfMonth="21" dayOfYear="355"/>
+<day id="19151223" dayOfWeek="4" weekOfMonth="3" dayOfMonth="22" dayOfYear="356"/>
+<day id="19151224" dayOfWeek="5" weekOfMonth="3" dayOfMonth="23" dayOfYear="357"/>
+<day id="19151225" dayOfWeek="6" weekOfMonth="3" dayOfMonth="24" dayOfYear="358"/>
+<day id="19151226" dayOfWeek="0" weekOfMonth="4" dayOfMonth="25" dayOfYear="359"/>
+<day id="19151227" dayOfWeek="1" weekOfMonth="4" dayOfMonth="26" dayOfYear="360"/>
+<day id="19151228" dayOfWeek="2" weekOfMonth="4" dayOfMonth="27" dayOfYear="361"/>
+<day id="19151229" dayOfWeek="3" weekOfMonth="4" dayOfMonth="28" dayOfYear="362"/>
+<day id="19151230" dayOfWeek="4" weekOfMonth="4" dayOfMonth="29" dayOfYear="363"/>
+<day id="19151231" dayOfWeek="5" weekOfMonth="4" dayOfMonth="30" dayOfYear="364"/>
 </month>
 </year>

@@ -2,11 +2,15 @@
 <project name="SVG Calendar" default="yearplanner" basedir=".">
 
   <target name="yearplanner">
-    <xslt in="input/1915.xml" out="../examples/yearplanner.svg" style="xsl/yearplanner.xsl" force="yes"/>
+    <xslt in="input/2026.xml" out="../examples/yearplanner.svg" style="xsl/yearplanner.xsl" force="yes"/>
   </target>
 
   <target name="calendar">
-    <xslt in="input/1915.xml" out="../examples/calendar.svg" style="xsl/year.xsl" force="yes"/>
+    <xslt in="input/2026.xml" out="../examples/calendar.svg" style="xsl/year.xsl" force="yes"/>
+  </target>
+
+  <target name="zeppelin" description="An overlay example">
+    <xslt in="input/1915.xml" out="../examples/zeppelin.svg" style="overlay/zeppelin.xsl" force="yes"/>
   </target>
 
 </project>
