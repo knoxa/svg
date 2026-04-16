@@ -1,6 +1,6 @@
 # Widgets
 
-* Canvas
-* Drag and Drop
-* Layout
-* Heagonal Grid
+* [Canvas](canvas)
+* [Drag and Drop](drag)
+* [Hexagonal Grid](hexgrid)
+* [Layout](layout)
