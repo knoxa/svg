@@ -96,7 +96,7 @@
 		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
 	</g>
 
-	<g transform="translate(900,200)">
+	<g transform="translate(800,200)">
 		<use xlink:href="#king" />	
 		<circle cx="0" cy="0" r="2" style="fill:green; stroke:none"/>
 	</g>
