@@ -1,4 +1,4 @@
-# Symmetries of the Euclidean plane.
+# Symmetries of the Euclidean plane
 
 Filenames are the [IUCr Symmetry notation](https://en.wikipedia.org/wiki/International_Union_of_Crystallography#IUCr_Symmetry_notation).
 

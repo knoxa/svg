@@ -2,5 +2,6 @@
 
 ## Examples
 
-* [Calendar](examples/calendar.svg)
-* [Yearplanner](examples/yearplanner.svg)
+* [Calendar](calender)
+* Tilings: [periodic](walllpaper) and [aperiodic](aperiodic)
+* [Fractals](fractal)
